@@ -40,7 +40,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${montserrat.variable} ${prosto.variable} antialiased`}>
+      <body
+        className={`${montserrat.variable} ${prosto.variable} flex min-h-screen flex-col antialiased text-12light tabxl:text-16light`}
+      >
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
