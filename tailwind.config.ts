@@ -61,7 +61,10 @@ export default {
         blue: "#4267B6",
       },
 
-      backgroundImage: {},
+      backgroundImage: {
+        statisticsGradient:
+          "linear-gradient(157.49deg, #EDF0F5 47.4%, #1543AB 174.19%)",
+      },
       boxShadow: {},
     },
   },
