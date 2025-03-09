@@ -5,7 +5,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "./globals.css";
-import { Locale } from "@/types/Locale";
+import { Locale } from "@/types/locale";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
