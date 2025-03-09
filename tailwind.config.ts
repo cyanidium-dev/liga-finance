@@ -16,7 +16,7 @@ export default {
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
-        alegreya: ["var(--font-alegreya)"],
+        prosto: ["var(--font-prosto)"],
       },
       container: {
         center: true,
