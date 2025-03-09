@@ -10,6 +10,7 @@ export default {
     extend: {
       screens: {
         tab: "768px",
+        tabxl: "820px",
         laptop: "1280px",
         deskxl: "1700px",
         deskxxl: "1920px",
@@ -22,9 +23,10 @@ export default {
         center: true,
         padding: {
           DEFAULT: "25px",
-          xl: "70px",
+          lg: "70px",
         },
       },
+
       fontSize: {
         "6light": ["6px", { fontWeight: "300" }],
         "8reg": ["8px", { fontWeight: "400" }],
