@@ -1,3 +1,7 @@
 export default function Statistics() {
-  return <div>Statistics</div>;
+  return (
+    <section className="container max-w-[1920px] pt-[100px] xl:pt-[110px]">
+      Statistics
+    </section>
+  );
 }
