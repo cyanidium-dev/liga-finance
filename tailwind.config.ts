@@ -53,6 +53,7 @@ export default {
         "32reg": ["32px", { fontWeight: "400" }],
         "36reg": ["36px", { fontWeight: "400" }],
         "52reg": ["52px", { fontWeight: "400" }],
+        "100reg": ["100px", { fontWeight: "400" }],
         "276reg": ["276px", { fontWeight: "400" }],
       },
       colors: {
