@@ -41,7 +41,7 @@ export default function LocaleSwitcher() {
           alt="arrow icon"
           width="12"
           height="12"
-          className={`${
+          className={`size-3 xl:size-4 ${
             isOpen ? "rotate-180" : "rotate-0"
           } transition duration-300 ease-in-out`}
         />
