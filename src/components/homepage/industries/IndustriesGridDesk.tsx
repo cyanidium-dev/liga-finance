@@ -7,7 +7,7 @@ export default function IndustriesGridDesk() {
       <div className="grid grid-cols-[0.96fr_2.03fr] gap-5 h-full">
         <Image
           src="/images/industries/industryOneDesk.webp"
-          alt=""
+          alt="industry"
           width={346}
           height={994}
           className="rounded-[8px] object-cover h-full"
@@ -17,14 +17,14 @@ export default function IndustriesGridDesk() {
             {" "}
             <Image
               src="/images/industries/industryTwoDesk.webp"
-              alt=""
+              alt="industry"
               width={348}
               height={612}
               className="rounded-[8px] object-cover"
             />{" "}
             <Image
               src="/images/industries/industryThreeDesk.webp"
-              alt=""
+              alt="industry"
               width={346}
               height={612}
               className="rounded-[8px] object-cover"
@@ -32,7 +32,7 @@ export default function IndustriesGridDesk() {
           </div>
           <Image
             src="/images/industries/industryFourDesk.webp"
-            alt=""
+            alt="industry"
             width={734}
             height={342}
             className="rounded-[8px] object-cover"
@@ -45,7 +45,7 @@ export default function IndustriesGridDesk() {
           {" "}
           <Image
             src="/images/industries/industryFiveDesk.webp"
-            alt=""
+            alt="industry"
             width={540}
             height={342}
             className="rounded-[8px] object-cover"
@@ -61,7 +61,7 @@ export default function IndustriesGridDesk() {
         <div className="grid grid-cols-[0.514fr_1.09fr] gap-5">
           <Image
             src="/images/industries/industrySevenDesk.webp"
-            alt=""
+            alt="industry"
             width={346}
             height={612}
             className="rounded-[8px] object-cover"
@@ -69,14 +69,14 @@ export default function IndustriesGridDesk() {
           <div className="flex flex-col justify-between">
             <Image
               src="/images/industries/industryEightDesk.webp"
-              alt=""
+              alt="industry"
               width={734}
               height={296}
               className="rounded-[8px] object-cover"
             />
             <Image
               src="/images/industries/industryNineDesk.webp"
-              alt=""
+              alt="industry"
               width={734}
               height={276}
               className="rounded-[8px] object-cover"

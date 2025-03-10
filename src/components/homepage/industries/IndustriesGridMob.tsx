@@ -6,7 +6,7 @@ export default function IndustriesGridMob() {
       <div className="grid grid-cols-[0.95fr_0.96fr] gap-3">
         <Image
           src="/images/industries/industryOneMob.webp"
-          alt=""
+          alt="industry"
           layout="responsive"
           width={298}
           height={571}
@@ -16,7 +16,7 @@ export default function IndustriesGridMob() {
         <div className="flex flex-col justify-between">
           <Image
             src="/images/industries/industryTwoMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={300}
             height={241}
@@ -24,7 +24,7 @@ export default function IndustriesGridMob() {
           />
           <Image
             src="/images/industries/industryThreeMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={450}
             height={460}
@@ -34,7 +34,7 @@ export default function IndustriesGridMob() {
       </div>
       <Image
         src="/images/industries/industryFourMob.webp"
-        alt=""
+        alt="industry"
         layout="responsive"
         width={622}
         height={265}
@@ -44,7 +44,7 @@ export default function IndustriesGridMob() {
         <div className="flex flex-col gap-3">
           <Image
             src="/images/industries/industryFiveMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={298}
             height={201}
@@ -52,7 +52,7 @@ export default function IndustriesGridMob() {
           />
           <Image
             src="/images/industries/industrySixMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={298}
             height={347}
@@ -60,7 +60,7 @@ export default function IndustriesGridMob() {
           />
           <Image
             src="/images/industries/industrySevenMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={298}
             height={265}
@@ -70,7 +70,7 @@ export default function IndustriesGridMob() {
         <div className="flex flex-col justify-between">
           <Image
             src="/images/industries/industryEightMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={298}
             height={457}
@@ -78,7 +78,7 @@ export default function IndustriesGridMob() {
           />
           <Image
             src="/images/industries/industryNineMob.webp"
-            alt=""
+            alt="industry"
             layout="responsive"
             width={298}
             height={379}
