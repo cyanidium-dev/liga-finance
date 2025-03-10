@@ -4,16 +4,15 @@ export default function IndustriesGridMob() {
   return (
     <div className="tab:hidden flex flex-col gap-3">
       <div className="grid grid-cols-[0.95fr_0.96fr] gap-3">
-        <div>
-          <Image
-            src="/images/industries/industryOneMob.webp"
-            alt=""
-            layout="responsive"
-            width={298}
-            height={571}
-            className="rounded-[8px] object-cover"
-          />
-        </div>
+        <Image
+          src="/images/industries/industryOneMob.webp"
+          alt=""
+          layout="responsive"
+          width={298}
+          height={571}
+          className="rounded-[8px] object-cover"
+        />
+
         <div className="flex flex-col justify-between">
           <Image
             src="/images/industries/industryTwoMob.webp"
