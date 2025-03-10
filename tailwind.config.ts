@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        moblg: "410px",
         tab: "768px",
         tabxl: "820px",
         laptop: "1280px",
