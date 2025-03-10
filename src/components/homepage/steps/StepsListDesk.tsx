@@ -40,12 +40,13 @@ export default function StepsListDesk() {
         <p className="max-w-[154px] mr-auto mt-auto font-prosto text-12reg tab:text-16reg xl:text-20reg uppercase leading-[130%]">
           {t("secondDescription")}
         </p>
+
         <Image
           src="/images/steps/secondBgDesk.webp"
           alt="background"
           width={640}
           height={248}
-          className="absolute top-0 left-0 -z-10 w-full h-full oblect-cover"
+          className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
       </li>
       <li className="relative -z-20 flex flex-col items-center w-1/4 px-[25px] py-9 bg-blue">
@@ -78,7 +79,7 @@ export default function StepsListDesk() {
           alt="background"
           width={640}
           height={248}
-          className="absolute top-0 left-0 -z-10 w-full h-full oblect-cover"
+          className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
       </li>
     </ul>
