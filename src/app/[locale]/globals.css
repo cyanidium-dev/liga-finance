@@ -7,6 +7,11 @@
   --foreground: #edf0f5;
 }
 
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -18,6 +23,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 a {

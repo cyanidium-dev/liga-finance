@@ -49,6 +49,7 @@ export default {
         "18reg": ["18px", { fontWeight: "400" }],
         "20reg": ["20px", { fontWeight: "400" }],
         "24reg": ["24px", { fontWeight: "400" }],
+        "26reg": ["26px", { fontWeight: "400" }],
         "28reg": ["28px", { fontWeight: "400" }],
         "32reg": ["32px", { fontWeight: "400" }],
         "36reg": ["36px", { fontWeight: "400" }],
@@ -61,11 +62,16 @@ export default {
         white: "#EDF0F5",
         main: "#031847",
         blue: "#4267B6",
+        lightBlue: "#DEEBFF",
       },
 
       backgroundImage: {
         statisticsGradient:
           "linear-gradient(157.49deg, #EDF0F5 47.4%, #1543AB 174.19%)",
+        mainButtonGradient:
+          "linear-gradient(93.56deg, #B4CCFF -14.73%, #4267BA 22.87%, #0F3381 97.81%)",
+        mainButtonBorderGradient:
+          "linear-gradient(90deg, #304F94 0%, #6582C2 100%)",
       },
       boxShadow: {},
     },

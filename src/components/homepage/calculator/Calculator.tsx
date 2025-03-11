@@ -1,3 +1,7 @@
 export default function Calculator() {
-  return <div>Calculator</div>;
+  return (
+    <section id="calculator" className="scroll-mt-12">
+      Calculator
+    </section>
+  );
 }

@@ -7,7 +7,6 @@ export default function IndustriesGridMob() {
         <Image
           src="/images/industries/industryOneMob.webp"
           alt="industry"
-          layout="responsive"
           width={298}
           height={571}
           className="rounded-[8px] object-cover"
@@ -17,7 +16,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industryTwoMob.webp"
             alt="industry"
-            layout="responsive"
             width={300}
             height={241}
             className="rounded-[8px] object-cover"
@@ -25,7 +23,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industryThreeMob.webp"
             alt="industry"
-            layout="responsive"
             width={450}
             height={460}
             className="rounded-[8px] object-cover"
@@ -35,7 +32,6 @@ export default function IndustriesGridMob() {
       <Image
         src="/images/industries/industryFourMob.webp"
         alt="industry"
-        layout="responsive"
         width={622}
         height={265}
         className="rounded-[8px] object-cover"
@@ -45,7 +41,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industryFiveMob.webp"
             alt="industry"
-            layout="responsive"
             width={298}
             height={201}
             className="rounded-[8px] object-cover"
@@ -53,7 +48,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industrySixMob.webp"
             alt="industry"
-            layout="responsive"
             width={298}
             height={347}
             className="rounded-[8px] object-cover"
@@ -61,7 +55,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industrySevenMob.webp"
             alt="industry"
-            layout="responsive"
             width={298}
             height={265}
             className="rounded-[8px] object-cover"
@@ -71,7 +64,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industryEightMob.webp"
             alt="industry"
-            layout="responsive"
             width={298}
             height={457}
             className="rounded-[8px] object-cover"
@@ -79,7 +71,6 @@ export default function IndustriesGridMob() {
           <Image
             src="/images/industries/industryNineMob.webp"
             alt="industry"
-            layout="responsive"
             width={298}
             height={379}
             className="rounded-[8px] object-cover"
