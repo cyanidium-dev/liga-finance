@@ -7,7 +7,7 @@ export default function StepsListDesk() {
     <ul className="hidden sm:flex">
       <li className="relative -z-20 flex flex-col items-center w-1/4 px-[25px] py-9 bg-main">
         <div className="flex items-center gap-x-[19px] w-full mb-[88px]">
-          <h3 className="font-prosto text-14reg xl:text-20reg uppercase leading-[130%]">
+          <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
             {t("firstTitle")}
           </h3>
           <span className="size-[17px] rounded-full bg-white"></span>{" "}
@@ -28,7 +28,7 @@ export default function StepsListDesk() {
       </li>
       <li className="relative -z-20 flex flex-col items-center w-1/4 px-[25px] py-9 text-black">
         <div className="flex items-center gap-x-[19px] w-full mb-[88px]">
-          <h3 className="font-prosto text-14reg xl:text-20reg uppercase leading-[130%]">
+          <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
             {t("secondTitle")}
           </h3>
           <span className="size-[17px] rounded-full bg-black"></span>
@@ -51,10 +51,10 @@ export default function StepsListDesk() {
       </li>
       <li className="relative -z-20 flex flex-col items-center w-1/4 px-[25px] py-9 bg-blue">
         <div className="flex items-center gap-x-[19px] w-full mb-[88px]">
-          <h3 className="font-prosto text-14reg xl:text-20reg uppercase leading-[130%]">
+          <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
             {t("thirdTitle")}
           </h3>
-          <span className="size-[17px] rounded-full bg-white"></span>{" "}
+          <span className="size-[17px] rounded-full bg-white"></span>
         </div>
         <p className="mb-[106px] text-100reg xl:text-276reg leading-none">3</p>
 
@@ -64,10 +64,10 @@ export default function StepsListDesk() {
       </li>
       <li className="relative -z-20 flex flex-col items-center w-1/4 px-[25px] py-9">
         <div className="flex items-center gap-x-[19px] w-full mb-[88px]">
-          <h3 className="font-prosto text-14reg xl:text-20reg uppercase leading-[130%]">
+          <h3 className="w-[65%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
             {t("fourthTitle")}
           </h3>
-          <span className="size-[17px] rounded-full bg-white"></span>{" "}
+          <span className="size-[17px] rounded-full bg-white"></span>
         </div>
         <p className="mb-[106px] text-100reg xl:text-276reg leading-none">4</p>
 
