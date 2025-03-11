@@ -22,7 +22,7 @@ export default function BurgerMenu({
       transition duration-[600ms] overflow-y-auto`}
     >
       <div className="container flex flex-col items-center max-w-full py-20 px-[60px] xl:px-[98px]">
-        <FreeConsultation />
+        <FreeConsultation setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
         <NavMenu setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
       </div>
     </div>

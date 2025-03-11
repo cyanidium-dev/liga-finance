@@ -50,7 +50,7 @@ export default function LocaleSwitcher() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="absolute right-0 mt-1 w-[65px] bg-white rounded-[8px] z-50"
+            className="absolute right-0 mt-1 w-[65px] bg-white shadow-md rounded-[8px] z-50"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
