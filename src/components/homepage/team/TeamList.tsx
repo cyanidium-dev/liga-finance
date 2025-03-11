@@ -13,7 +13,7 @@ export default function TeamList() {
 
   return (
     <div className="flex justify-center">
-      <ul className="flex flex-wrap gap-3 xl:gap-5 w-full max-w-[511px] lg:max-w-[1560px]">
+      <ul className="flex flex-wrap gap-3 xl:gap-5 w-full max-w-[511px] lg:max-w-[1260px]">
         {teamList.map((teammate, idx) => (
           <Teammate
             key={idx}
