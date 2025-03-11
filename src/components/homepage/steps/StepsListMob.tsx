@@ -26,7 +26,7 @@ export default function StepsListMob() {
           className="absolute top-0 left-0 -z-10 w-auto h-full"
         />
       </li>
-      <li className="flex items-center gap-x-[83px] container max-w-[1920px] bg-main text-black">
+      <li className="relative flex items-center gap-x-[83px] container max-w-[1920px] text-black">
         <span className="text-100reg xl:text-276reg">2</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -39,6 +39,13 @@ export default function StepsListMob() {
             {t("secondDescription")}
           </p>
         </div>
+        <Image
+          src="/images/steps/secondBgMob.webp"
+          alt="background"
+          width={720}
+          height={260}
+          className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
+        />
       </li>
       <li className="flex items-center gap-x-[83px] container max-w-[1920px] bg-blue">
         <span className="text-100reg xl:text-276reg">3</span>
@@ -54,11 +61,11 @@ export default function StepsListMob() {
           </p>
         </div>
       </li>
-      <li className="flex items-center gap-x-[73px] container max-w-[1920px] bg-main">
+      <li className="relative flex items-center gap-x-[73px] container max-w-[1920px]">
         <span className="text-100reg xl:text-276reg">4</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
-            <span className="size-[14px] xl:size-6 rounded-full bg-white"></span>{" "}
+            <span className="size-[14px] xl:size-6 rounded-full bg-white"></span>
             <h3 className="font-prosto text-14reg uppercase">
               {t("fourthTitle")}
             </h3>
@@ -67,6 +74,13 @@ export default function StepsListMob() {
             {t("fourthDescription")}
           </p>
         </div>
+        <Image
+          src="/images/steps/fourthBgMob.webp"
+          alt="background"
+          width={720}
+          height={260}
+          className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
+        />
       </li>
     </ul>
   );
