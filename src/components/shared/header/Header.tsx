@@ -8,6 +8,7 @@ import SecondaryButton from "../buttons/SecondaryButton";
 import BurgerMenu from "./BurgerMenu";
 import { PHONE } from "@/constants/constants";
 import { phoneRegex } from "@/regex/regex";
+import Image from "next/image";
 
 export default function Header() {
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
@@ -28,7 +29,13 @@ export default function Header() {
             rel="noopener noreferrer nofollow"
             className=""
           >
-            <SecondaryButton className="hidden xl:block w-[200px]">
+            <SecondaryButton className="hidden xl:flex gap-x-[14px] items-center w-[202px]">
+              <Image
+                src="/images/icons/phone.svg"
+                alt="phone icon"
+                width={20}
+                height={20}
+              />
               {PHONE.replace(phoneRegex, "$1($2) $3 $4 $5")}
             </SecondaryButton>
           </a>
