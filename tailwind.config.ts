@@ -49,6 +49,7 @@ export default {
         "18reg": ["18px", { fontWeight: "400" }],
         "20reg": ["20px", { fontWeight: "400" }],
         "24reg": ["24px", { fontWeight: "400" }],
+        "26reg": ["26px", { fontWeight: "400" }],
         "28reg": ["28px", { fontWeight: "400" }],
         "32reg": ["32px", { fontWeight: "400" }],
         "36reg": ["36px", { fontWeight: "400" }],
