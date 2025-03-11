@@ -6,7 +6,7 @@ export default function Clients() {
   return (
     <section
       id="clients"
-      className="container max-w-[1920px] py-[100px] xl:py-[180px]"
+      className="container max-w-[1920px] py-[100px] xl:py-[180px] scroll-mt-12"
     >
       <h2 className="mb-12 font-prosto uppercase text-center text-20reg xl:text-36reg leading-[100%]">
         {t("title")}
