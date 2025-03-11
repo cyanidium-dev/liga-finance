@@ -4,7 +4,10 @@ import Image from "next/image";
 export default function Clients() {
   const t = useTranslations("homePage.clients");
   return (
-    <section className="container max-w-[1920px] py-[100px] xl:py-[180px]">
+    <section
+      id="clients"
+      className="container max-w-[1920px] py-[100px] xl:py-[180px]"
+    >
       <h2 className="mb-12 font-prosto uppercase text-center text-20reg xl:text-36reg leading-[100%]">
         {t("title")}
       </h2>

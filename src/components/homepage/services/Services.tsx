@@ -38,7 +38,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="flex justify-center">
+    <section id="services" className="flex justify-center">
       <div className="flex flex-col tabxl:flex-row gap-5 container w-fit max-w-[1920px] py-[100px] lg:py-[110px] text-black">
         {services.map((servicesList, idx) => (
           <ServicesList key={idx} servicesList={servicesList} />
