@@ -5,23 +5,41 @@ import BurgerMenuButton from "./BurgerMenuButton";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "../logo/Logo";
 import SecondaryButton from "../buttons/SecondaryButton";
-import { useTranslations } from "next-intl";
 import BurgerMenu from "./BurgerMenu";
+import { PHONE } from "@/constants/constants";
+import { phoneRegex } from "@/regex/regex";
+import Image from "next/image";
 
 export default function Header() {
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
   const toggleHeaderMenuOpen = () => setIsHeaderMenuOpened(!isHeaderMenuOpened);
-  const t = useTranslations("buttons");
 
   return (
     <header className="fixed z-10 w-dvw py-6 backdrop-blur-lg bg-black bg-opacity-40">
       <div className="flex justify-between container max-w-[1920px]">
-        <Logo className="w-6 xl:w-[27px] h-auto" textStyles="text-12reg xl:text-14reg" />
+        <Logo
+          className="w-6 xl:w-[27px] h-auto"
+          textStyles="text-12reg xl:text-14reg"
+        />
         <div className="flex gap-x-6 xl:gap-x-10 items-center">
           <LocaleSwitcher />
-          <SecondaryButton className="hidden xl:block w-[200px]">
-            {t("call")}
-          </SecondaryButton>
+          <a
+            href={`tel:+${PHONE.replace(/\D/g, "")}`}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className=""
+          >
+            <SecondaryButton className="hidden xl:flex gap-x-[14px] items-center w-[202px]">
+              <Image
+                src="/images/icons/phone.svg"
+                alt="phone icon"
+                width={20}
+                height={20}
+              />
+              {PHONE.replace(phoneRegex, "$1($2) $3 $4 $5")}
+            </SecondaryButton>
+          </a>
+
           <BurgerMenuButton
             isHeaderMenuOpened={isHeaderMenuOpened}
             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
