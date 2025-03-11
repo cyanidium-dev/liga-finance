@@ -22,7 +22,7 @@ export default function NavMenu({ setIsHeaderMenuOpened }: NavMenuProps) {
   ];
 
   return (
-    <nav className={`relative flex justify-center items-center`}>
+    <nav className={`relative flex items-center w-full max-w-[318px]`}>
       <ul className={`flex flex-col gap-5`}>
         {menuList.map((menuItem, idx) => (
           <MenuLink

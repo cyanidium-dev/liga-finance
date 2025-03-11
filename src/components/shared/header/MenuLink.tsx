@@ -18,7 +18,7 @@ export default function MenuLink({
   const { title, path } = menuItem;
 
   return (
-    <li className={`text-center ${className}`}>
+    <li className={`${className}`}>
       <Link
         href={`/${path}`}
         onClick={() => {
