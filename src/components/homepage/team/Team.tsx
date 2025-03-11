@@ -1,3 +1,3 @@
 export default function Team() {
-  return <div>Team</div>;
+  return <section id="team">Team</section>;
 }

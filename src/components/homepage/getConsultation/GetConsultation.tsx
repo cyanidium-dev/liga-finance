@@ -1,3 +1,3 @@
 export default function GetConsultation() {
-  return <div>GetConsultation</div>;
+  return <section id="consultation">GetConsultation</section>;
 }
