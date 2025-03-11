@@ -12,7 +12,7 @@ export default function FreeConsultation({
 }: FreeConsultationProps) {
   const t = useTranslations("");
   return (
-    <div className="mb-14">
+    <div className="max-w-[318px] mb-14 mx-auto">
       <h2 className="mb-4 xl:mb-5 font-prosto text-18reg xl:text-24reg uppercase text-center">
         {t("header.freeConsultation.title")}
       </h2>
