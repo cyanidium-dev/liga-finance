@@ -14,7 +14,7 @@ export default function Header() {
   const t = useTranslations("buttons");
 
   return (
-    <header className="fixed z-10 w-dvw py-6 backdrop-blur-lg bg-black bg-opacity-40">
+    <header className="fixed z-10 w-dvw py-6 xl:pt-[42px] xl:pb-[19px] backdrop-blur-lg bg-black bg-opacity-40">
       <div className="flex justify-between container max-w-[1920px]">
         <Logo />
         <div className="flex gap-x-6 xl:gap-x-10 items-center">
