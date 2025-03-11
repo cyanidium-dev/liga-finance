@@ -8,10 +8,8 @@ export default function FooterBottom() {
       <p className="mb-2 text-8reg tab:text-12reg lg:text-16reg uppercase leading-[130%]">
         {t("rights")}
       </p>
-      <div className="flex gap-x-[2px] text-8reg lg:text-16reg leading-[130%]">
-        <p className="text-8reg tab:text-12reg lg:text-16reg leading-[130%]">
-          {t("develop")}
-        </p>
+      <div className="flex gap-x-[2px] text-8reg tab:text-12reg lg:text-16reg leading-[130%]">
+        <p>{t("develop")}</p>
         <a
           href={CYANIDIUM_URL}
           target="_blank"
