@@ -13,6 +13,7 @@ export default {
         tab: "768px",
         tabxl: "820px",
         laptop: "1280px",
+        desk: "1500px",
         deskxl: "1700px",
         deskxxl: "1920px",
       },

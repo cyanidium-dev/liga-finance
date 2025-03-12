@@ -3,8 +3,9 @@ import Image from "next/image";
 
 export default function IndustriesGridMob() {
   const t = useTranslations("homePage.industries");
+
   return (
-    <div className="tab:hidden flex flex-col gap-3">
+    <div className="tab:hidden flex flex-col gap-3 max-w-[540px] mx-auto">
       <div className="grid grid-cols-[0.95fr_0.96fr] gap-3">
         <div className="relative flex flex-col justify-end aspect-[298/571] p-3">
           <Image
