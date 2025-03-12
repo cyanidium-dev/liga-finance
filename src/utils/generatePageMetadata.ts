@@ -19,13 +19,13 @@ export async function generatePageMetaData({
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
-  const metadataBase = baseUrl ? new URL(baseUrl) : undefined;
+  const metadataBase = baseUrl ? new URL(baseUrl) : null;
 
   const localizedCanonical =
     locale === "uk" ? canonical : `/${locale}${canonical}`;
 
   return {
-    ...(metadataBase ? { metadataBase } : {}),
+    metadataBase,
     alternates: {
       canonical: localizedCanonical,
       languages: {
