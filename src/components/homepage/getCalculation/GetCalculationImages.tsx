@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-export default function GetConsultationImages() {
+export default function GetCalculationImages() {
   return (
     <>
       <Image
-        src="/images/getConsultation/building.webp"
+        src="/images/getCalculation/building.webp"
         alt="building"
         width={2560}
         height={1286}
@@ -13,14 +13,14 @@ export default function GetConsultationImages() {
       <div className="hidden tab:block absolute -z-30 right-[-49px] bottom-[-222px] size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px]"></div>
 
       <Image
-        src="/images/getConsultation/logo.webp"
+        src="/images/getCalculation/logo.webp"
         alt="logo"
         width={914}
         height={1070}
         className="hidden tab:block absolute -z-10 bottom-0 right-0 w-[328px] xl:w-[457px] h-auto"
       />
       <Image
-        src="/images/getConsultation/woman.webp"
+        src="/images/getCalculation/woman.webp"
         alt="woman"
         width={904}
         height={1286}
