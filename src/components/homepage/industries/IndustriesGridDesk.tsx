@@ -91,7 +91,7 @@ export default function IndustriesGridDesk() {
           </div>
         </div>
         <div className="flex gap-5">
-          <div className="relative flex flex-col justify-end w-[calc(32%-10px)] aspect-[173/306] p-[18px]">
+          <div className="relative flex flex-col justify-start w-[calc(32%-10px)] aspect-[173/306] p-[18px]">
             <Image
               src="/images/industries/industrySevenDesk.webp"
               alt="industry"
@@ -99,7 +99,7 @@ export default function IndustriesGridDesk() {
               height={612}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[165px] mr-auto font-prosto text-18reg uppercase text-left">
+            <p className="relative z-10 w-[165px] ml-auto font-prosto text-18reg uppercase text-right">
               {t("advertisement")}
             </p>
           </div>

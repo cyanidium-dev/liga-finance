@@ -64,6 +64,7 @@ export default {
         main: "#031847",
         blue: "#4267B6",
         lightBlue: "#DEEBFF",
+        darkRed: "#FF7272",
       },
 
       backgroundImage: {
@@ -74,7 +75,19 @@ export default {
         mainButtonBorderGradient:
           "linear-gradient(90deg, #304F94 0%, #6582C2 100%)",
       },
-      boxShadow: {},
+      keyframes: {
+        rotate: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
+      },
+      animation: {
+        rotation: "rotate 1600ms linear infinite",
+      },
     },
   },
   plugins: [],

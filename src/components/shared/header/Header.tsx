@@ -9,13 +9,14 @@ import BurgerMenu from "./BurgerMenu";
 import { PHONE } from "@/constants/constants";
 import { headerPhoneRegex } from "@/regex/regex";
 import Image from "next/image";
+import Backdrop from "../backdrop/Backdrop";
 
 export default function Header() {
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
   const toggleHeaderMenuOpen = () => setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
   return (
-    <header className="fixed z-10 w-dvw py-6 backdrop-blur-lg bg-black bg-opacity-40">
+    <header className="fixed z-10 w-dvw py-6 backdrop-blur-lg supports-[backdrop-blur]:before:backdrop-blur-lg will-change-transform bg-black bg-opacity-40">
       <div className="flex justify-between container max-w-[1920px]">
         <Logo
           className="w-6 xl:w-[27px] h-auto"
@@ -50,6 +51,10 @@ export default function Header() {
           />
         </div>
       </div>
+      <Backdrop
+        isVisible={isHeaderMenuOpened}
+        onClick={() => setIsHeaderMenuOpened(false)}
+      />
     </header>
   );
 }

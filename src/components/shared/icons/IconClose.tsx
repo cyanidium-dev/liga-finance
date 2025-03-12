@@ -18,7 +18,7 @@ export default function IconClose({ className }: IconProps) {
         height="1.42857"
         rx="0.714286"
         transform="rotate(45 11.4771 10.3079)"
-        fill="#7D7D7D"
+        fill="currentColor"
       />
       <rect
         x="10.7144"
@@ -27,7 +27,7 @@ export default function IconClose({ className }: IconProps) {
         height="1.42857"
         rx="0.714286"
         transform="rotate(-45 10.7144 28.897)"
-        fill="#7D7D7D"
+        fill="currentColor"
       />
     </svg>
   );
