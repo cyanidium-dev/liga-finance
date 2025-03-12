@@ -9,7 +9,6 @@ import { CallBackValidation } from "@/schemas/callBackFormValidation";
 import { handleSubmitForm } from "@/utils/handleSubmitForm";
 
 import CustomizedInput from "./formElements/CustomizedInput";
-import FormDescription from "./formElements/FormDescription";
 import SubmitButton from "./formElements/SubmitButton";
 
 export interface ValuesCallBackFormType {
@@ -75,7 +74,6 @@ export default function CallBackForm({
             mask={phoneMask}
             autocomplete="tel-national"
           />
-          <FormDescription />
           <SubmitButton dirty={dirty} isValid={isValid} isLoading={isLoading} />
         </Form>
       )}
