@@ -15,7 +15,7 @@ export default function WhiteButton({
       disabled={disabled}
       onClick={onClick}
       className={`group relative overflow-hidden flex items-center justify-center px-4 py-[13.5px] border border-white text-14reg rounded-full transition duration-300 ease-out enabled:active:scale-95 
-        bg-white text-black disabled:bg-transparent diasabled:border-white/50 disabled:text-white/50
+        bg-white text-black disabled:bg-transparent disabled:border-white/50 disabled:text-white/50
           
         ${isLoading ? "" : ""} 
         ${className}`}

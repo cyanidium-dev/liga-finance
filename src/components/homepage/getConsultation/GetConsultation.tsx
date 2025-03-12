@@ -1,14 +1,8 @@
-"use client";
-
-import { useState } from "react";
-import CallBackForm from "@/components/shared/forms/CallBackForm";
-import NotificationPopUp from "@/components/shared/pop-ups/NotificationPopUp";
 import { useTranslations } from "next-intl";
 import GetConsultationImages from "./GetConsultationImages";
+import CallBackApplication from "@/components/shared/callBackApllication/CallBackApplication";
 
 export default function GetConsultation() {
-  const [isError, setIsError] = useState(false);
-  const [isNotificationShown, setIsNotificationShown] = useState(false);
   const t = useTranslations("homePage.getConsultation");
 
   return (
@@ -25,16 +19,7 @@ export default function GetConsultation() {
           <p className="mb-8 xl:mb-12 text-center tab:text-left">
             {t("description")}
           </p>
-          <CallBackForm
-            setIsError={setIsError}
-            setIsNotificationShown={setIsNotificationShown}
-          />
-          <NotificationPopUp
-            isNotificationShown={isNotificationShown}
-            isError={isError}
-            setIsError={setIsError}
-            setIsNotificationShown={setIsNotificationShown}
-          />
+          <CallBackApplication />
         </div>
       </div>
     </section>
