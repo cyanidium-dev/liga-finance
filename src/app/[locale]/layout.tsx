@@ -31,7 +31,7 @@ export async function generateMetadata({
 }: {
   params: { locale: Locale };
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   return generatePageMetaData({
     locale,
     namespace: "metadata",
