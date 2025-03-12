@@ -1,7 +1,7 @@
 import { Dispatch, ReactNode, SetStateAction } from "react";
 
 import IconButton from "../buttons/IconButton";
-import IconClose from "../icons/IconCLose";
+import IconClose from "../icons/IconClose";
 
 interface ModalProps {
   isPopUpShown: boolean;
@@ -28,9 +28,9 @@ export default function Modal({
       } rounded-[16px]`}
     >
       <div className="absolute top-3 right-3 tab:top-6 tab:right-6 size-9 tab:size-10">
-        {/* <IconButton handleClick={() => setIsPopUpShown(false)}>
+        <IconButton handleClick={() => setIsPopUpShown(false)}>
           {<IconClose className="size-full" />}
-        </IconButton> */}
+        </IconButton>
       </div>
       {children}
     </div>
