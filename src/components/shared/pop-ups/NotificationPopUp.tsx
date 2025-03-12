@@ -29,15 +29,11 @@ export default function NotificationPopUp({
       <Modal
         isPopUpShown={isNotificationShown}
         setIsPopUpShown={setIsNotificationShown}
-        isError={isError}
       >
-        <div className="flex flex-col items-center gap-y-6">
+        <div className="flex flex-col items-center gap-y-6 text-black">
           <h2
-            className={`relative font-alegreya text-center text-24med tab:text-32med tab:uppercase ${
-              isError ? "text-darkRed" : "text-greenDark"
-            }`}
+            className={`relative font-prosto text-center text-20reg tab:text-24reg tab:uppercase`}
           >
-            {" "}
             {t(`${isError ? "unsuccessful" : "successful"}.title`)}
           </h2>
 

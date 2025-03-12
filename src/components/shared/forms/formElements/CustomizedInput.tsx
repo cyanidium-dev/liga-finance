@@ -21,8 +21,7 @@ interface CustomizedInputProps {
 const labelStyles = "relative flex flex-col w-full";
 const fieldStyles =
   "relative w-full h-full px-6 py-[13px] placeholder-white border-[1.5px] rounded-full bg-transparent outline-none text-14light transition duration-300 ease-out";
-const fieldWrapperStyles =
-  "relative before:content-[''] before:absolute before:top-[-2.5px] before:left-[-2px] before:rounded-[8px] before:w-[calc(100%+5px)] before:h-[calc(100%+5px)] before:blur-[2px] before:transition before:duration-300 before:ease-out before:will-change-transform";
+const fieldWrapperStyles = "relative";
 const errorStyles = "absolute bottom-[-19px] right-0 text-10med text-darkRed";
 
 export default function CustomizedInput({
