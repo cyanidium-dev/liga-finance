@@ -12,24 +12,24 @@ import CustomizedInput from "./formElements/CustomizedInput";
 import SubmitButton from "./formElements/SubmitButton";
 
 export interface ValuesCallBackFormType {
+  name: string;
   phone: string;
 }
 
 interface CallBackFormProps {
   setIsError: Dispatch<SetStateAction<boolean>>;
   setIsNotificationShown: Dispatch<SetStateAction<boolean>>;
-  setIsPopUpShown: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function CallBackForm({
   setIsError,
   setIsNotificationShown,
-  setIsPopUpShown,
 }: CallBackFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const t = useTranslations("");
 
   const initialValues = {
+    name: "",
     phone: "",
   };
 
@@ -41,6 +41,7 @@ export default function CallBackForm({
   ) => {
     const data =
       `<b>Заявка "Передзвоніть мені"</b>\n` +
+      `Ім'я: ${values.name.trim()}\n` +
       `Телефон: +38${values.phone.replace(/[^\d+]/g, "")}\n`;
 
     await handleSubmitForm<ValuesCallBackFormType>(
@@ -48,8 +49,7 @@ export default function CallBackForm({
       setIsLoading,
       setIsError,
       setIsNotificationShown,
-      data,
-      setIsPopUpShown
+      data
     );
   };
 
@@ -60,17 +60,20 @@ export default function CallBackForm({
       validationSchema={validationSchema}
     >
       {({ errors, touched, dirty, isValid }) => (
-        <Form className="flex flex-col w-full h-full rounded-[24px]">
+        <Form className="flex flex-col w-full h-full gap-y-6">
+          <CustomizedInput
+            fieldName="name"
+            placeholder={t("forms.namePlaceholder")}
+            errors={errors}
+            touched={touched}
+          />
           <CustomizedInput
             fieldName="phone"
-            label={t("forms.phone")}
-            required={true}
+            inputType="tel"
             placeholder={t("forms.phonePlaceholder")}
             errors={errors}
             touched={touched}
             as={MaskedInput}
-            image="/images/icons/phonePrefix.svg"
-            fieldClassName="pl-[70px]"
             mask={phoneMask}
             autocomplete="tel-national"
           />

@@ -7,7 +7,7 @@ import Logo from "../logo/Logo";
 import SecondaryButton from "../buttons/SecondaryButton";
 import BurgerMenu from "./BurgerMenu";
 import { PHONE } from "@/constants/constants";
-import { phoneRegex } from "@/regex/regex";
+import { headerPhoneRegex } from "@/regex/regex";
 import Image from "next/image";
 
 export default function Header() {
@@ -36,7 +36,7 @@ export default function Header() {
                 width={20}
                 height={20}
               />
-              {PHONE.replace(phoneRegex, "$1($2) $3 $4 $5")}
+              {PHONE.replace(headerPhoneRegex, "$1-$2-$3-$4-$5")}
             </SecondaryButton>
           </a>
 
