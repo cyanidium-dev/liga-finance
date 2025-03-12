@@ -16,7 +16,7 @@ export default function IndustriesGridDesk() {
             height={994}
             className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
           />
-          <p className="relative z-10 w-[82px] mr-auto font-prosto text-18reg uppercase text-left">
+          <p className="relative w-[82px] mr-auto font-prosto text-18reg uppercase text-left">
             {t("trade")}
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function IndustriesGridDesk() {
                 height={612}
                 className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
               />
-              <p className="relative z-10 w-[82px] mr-auto font-prosto text-18reg uppercase text-left">
+              <p className="relative w-[82px] mr-auto font-prosto text-18reg uppercase text-left">
                 {t("agricultural")}
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function IndustriesGridDesk() {
                 height={612}
                 className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
               />
-              <p className="relative z-10 ml-auto font-prosto text-18reg uppercase text-left">
+              <p className="relative ml-auto font-prosto text-18reg uppercase text-left">
                 {t("services")}
               </p>
             </div>
@@ -55,7 +55,7 @@ export default function IndustriesGridDesk() {
               height={342}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 mr-auto font-prosto text-18reg uppercase text-left">
+            <p className="relative mr-auto font-prosto text-18reg uppercase text-left">
               {t("manufacturing")}
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function IndustriesGridDesk() {
               height={342}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[165px] mr-auto font-prosto text-18reg uppercase text-left">
+            <p className="relative w-[165px] mr-auto font-prosto text-18reg uppercase text-left">
               {t("charity")}
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function IndustriesGridDesk() {
               height={342}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[165px] mr-auto font-prosto text-18reg uppercase text-left">
+            <p className="relative w-[165px] mr-auto font-prosto text-18reg uppercase text-left">
               {t("it")}
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function IndustriesGridDesk() {
               height={612}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[165px] ml-auto font-prosto text-18reg uppercase text-right">
+            <p className="relative w-[165px] ml-auto font-prosto text-18reg uppercase text-right">
               {t("advertisement")}
             </p>
           </div>
@@ -113,7 +113,7 @@ export default function IndustriesGridDesk() {
                 height={296}
                 className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
               />
-              <p className="relative z-10 w-[185px] ml-auto font-prosto text-18reg uppercase text-right">
+              <p className="relative w-[185px] ml-auto font-prosto text-18reg uppercase text-right">
                 {t("medicine")}
               </p>
             </div>
@@ -125,7 +125,7 @@ export default function IndustriesGridDesk() {
                 height={276}
                 className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
               />
-              <p className="relative z-10 w-[185px] mr-auto font-prosto text-18reg uppercase text-left">
+              <p className="relative w-[185px] mr-auto font-prosto text-18reg uppercase text-left">
                 {t("construction")}
               </p>
             </div>
