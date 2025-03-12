@@ -5,7 +5,7 @@ export default function IndustriesGridDesk() {
   const t = useTranslations("homePage.industries");
 
   return (
-    <div className="hidden tab:grid xl:grid-cols-[1fr_1fr] desk:grid-cols-[0.99fr_1.01fr] gap-5">
+    <div className="hidden sm:grid xl:grid-cols-[0.99fr_1.01fr] gap-5">
       {/* Перший стовпчик */}
       <div className="grid grid-cols-[0.96fr_2.03fr] gap-5 h-full">
         <div className="relative flex flex-col justify-end aspect-[173/497] p-[18px]">
