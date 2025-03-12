@@ -10,14 +10,14 @@ export default function GetSuccessImages() {
         height={1286}
         className="absolute -z-40 top-0 left-0 w-full h-full object-cover"
       />
-      <div className="hidden tab:block absolute -z-30 left-[-33px] bottom-[-506px] size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px]"></div>
+      <div className="block absolute z-[-5] tab:-z-30 left-[-33px] bottom-[-100px] tab:bottom-[-506px] size-[400px] tab:size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] will-change-transform"></div>
 
       <Image
         src="/images/getSuccess/logo.webp"
         alt="logo"
         width={927}
         height={927}
-        className="hidden tab:block absolute -z-10 bottom-[-83px] left-[-225px] w-[628px] h-auto"
+        className="block absolute -z-10 bottom-[-60px] right-[-60px] tab:right-auto tab:bottom-[-83px] tab:left-[-175px] lg:left-[-225px] w-[230px] tab:w-[488px] lg:w-[628px] h-auto"
       />
       <Image
         src="/images/getSuccess/woman.webp"

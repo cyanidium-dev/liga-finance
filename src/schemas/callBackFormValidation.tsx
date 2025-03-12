@@ -11,8 +11,7 @@ export const CallBackValidation = () => {
       .string()
       .min(2, t("nameMinMaxSymbols"))
       .max(30, t("nameMinMaxSymbols"))
-      .matches(nameRegex, t("nameAllowedSymbols"))
-      .required(t("required")),
+      .matches(nameRegex, t("nameAllowedSymbols")),
     phone: yup
       .string()
       .matches(phoneRegex, t("wrongPhone"))
