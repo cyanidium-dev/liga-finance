@@ -10,14 +10,14 @@ export default function GetConsultationImages() {
         height={1286}
         className="absolute -z-40 top-0 left-0 w-full h-full object-cover"
       />
-      <div className="block absolute -z-10 tab:-z-30 top-[60px] left-[-70px] tab:left-auto tab:right-[-117px] tab:bottom-[-444px] size-[400px] tab:size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] will-change-transform"></div>
+      <div className="block absolute -z-10 lg:-z-30 top-[60px] left-[-70px] lg:left-auto lg:right-[-117px] lg:bottom-[-444px] size-[400px] lg:size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] will-change-transform"></div>
 
       <Image
         src="/images/getConsultation/logo.webp"
         alt="logo"
         width={927}
         height={927}
-        className="block absolute -z-20 top-[-60px] right-[-60px] tab:top-auto tab:bottom-0 lg:bottom-[72px] tab:right-0 lg:right-[257px] w-[230px] tab:w-[363px] xl:w-[463px] h-auto"
+        className="absolute -z-20 top-[-60px] right-[-60px] tab:right-[-100px] tab:top-auto tab:bottom-[-60px] lg:bottom-[72px] lg:right-[257px] w-[230px] tab:w-[363px] xl:w-[463px] h-auto"
       />
       <Image
         src="/images/getConsultation/woman.webp"

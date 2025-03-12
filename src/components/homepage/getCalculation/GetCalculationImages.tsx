@@ -10,14 +10,14 @@ export default function GetCalculationImages() {
         height={1286}
         className="absolute -z-40 top-0 left-0 w-full h-full object-cover"
       />
-      <div className="hidden tab:block absolute -z-30 right-[-49px] bottom-[-222px] size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] will-change-transform"></div>
+      <div className="absolute -z-[5] lg:-z-30 top-5 lg:top-auto left-5 lg:left-auto lg:right-[-49px] lg:bottom-[-222px] size-[400px] lg:size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] will-change-transform"></div>
 
       <Image
         src="/images/getCalculation/logo.webp"
         alt="logo"
-        width={914}
-        height={1070}
-        className="hidden tab:block absolute -z-10 bottom-0 right-0 w-[328px] xl:w-[457px] h-auto"
+        width={927}
+        height={927}
+        className="absolute -z-10 top-[-60px] tab:top-auto left-[-60px] tab:left-auto tab:bottom-[-23px] tab:right-[-101px] w-[230px] tab:w-[428px] lg:w-[558px] h-auto"
       />
       <Image
         src="/images/getCalculation/woman.webp"
