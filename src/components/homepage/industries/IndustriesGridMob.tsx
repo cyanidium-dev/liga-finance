@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function IndustriesGridMob() {
   return (
-    <div className="tab:hidden flex flex-col gap-3">
+    <div className="sm:hidden flex flex-col gap-3">
       <div className="grid grid-cols-[0.95fr_0.96fr] gap-3">
         <Image
           src="/images/industries/industryOneMob.webp"

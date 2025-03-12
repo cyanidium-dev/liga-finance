@@ -6,7 +6,6 @@ export default function WhiteButton({
   children,
   className = "",
   type = "button",
-  variant = "primary",
   disabled = false,
   isLoading = false,
   onClick,
@@ -16,20 +15,16 @@ export default function WhiteButton({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`flex items-center justify-center h-[51px] px-6 text-18med rounded-full transition duration-300 ease-out border-[2px] enabled:active:shadow-buttonGreenDark 
-        enabled:active:bg-greenDark enabled:active:border-white outline-none ${
-          variant === "primary"
-            ? "bg-green shadow-buttonGreen border-green laptop:enabled:hover:border-white enabled:focus-visible:border-white"
-            : "bg-white shadow-buttonWhite border-green laptop:enabled:hover:border-greenDark enabled:focus-visible:border-greenDark"
-        }  
-          enabled:group-active:bg-greenDark enabled:group-active:border-white
-        ${
-          isLoading
-            ? ""
-            : "disabled:bg-grey disabled:border-grey disabled:shadow-buttonGrey"
-        } 
+      className={`group relative overflow-hidden flex items-center justify-center px-4 py-[13.5px] text-14reg rounded-full transition duration-300 ease-out enabled:active:scale-95 
+       outline-none bg-white text-black 
+          
+        ${isLoading ? "" : ""} 
         ${className}`}
     >
+      <span
+        className="absolute top-0 left-[-150%] w-full h-full bg-gradient-to-r from-white/20 via-blue/30 to-white/20 opacity-70 
+  skew-x-[-40deg] enabled:group-[focus-visible]:left-[120%] xl:enabled:group-hover:left-[120%] transition-all duration-[800ms] ease-in-out"
+      />
       {children}
       {isLoading ? (
         <Image
