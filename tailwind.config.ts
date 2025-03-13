@@ -65,6 +65,7 @@ export default {
         blue: "#4267B6",
         lightBlue: "#DEEBFF",
         darkRed: "#FF7272",
+        lilac: "#516CA8",
       },
 
       backgroundImage: {
