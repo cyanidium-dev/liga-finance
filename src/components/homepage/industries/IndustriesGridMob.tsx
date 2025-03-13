@@ -15,7 +15,7 @@ export default function IndustriesGridMob() {
             height={571}
             className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
           />
-          <p className="relative z-10 w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+          <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
             {t("trade")}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function IndustriesGridMob() {
               height={241}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+            <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
               {t("agricultural")}
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function IndustriesGridMob() {
               height={306}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+            <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
               {t("services")}
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function IndustriesGridMob() {
           height={265}
           className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
         />
-        <p className="relative z-10 w-[82px] mr-auto font-prosto text-12reg uppercase text-right">
+        <p className="relative w-[82px] mr-auto font-prosto text-12reg uppercase text-right">
           {t("manufacturing")}
         </p>
       </div>
@@ -69,7 +69,7 @@ export default function IndustriesGridMob() {
               height={201}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+            <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
               {t("advertisement")}
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function IndustriesGridMob() {
               height={347}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10  w-[109px] mr-auto font-prosto text-12reg uppercase text-left">
+            <p className="relative w-[109px] mr-auto font-prosto text-12reg uppercase text-left">
               {t("charity")}
             </p>
           </div>
@@ -93,7 +93,7 @@ export default function IndustriesGridMob() {
               height={265}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[121px] ml-auto font-prosto text-12reg uppercase text-right">
+            <p className="relative w-[121px] ml-auto font-prosto text-12reg uppercase text-right">
               {t("medicine")}
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function IndustriesGridMob() {
               height={457}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10 w-[101px] mr-auto font-prosto text-12reg uppercase text-left">
+            <p className="relative w-[101px] mr-auto font-prosto text-12reg uppercase text-left">
               {t("construction")}
             </p>
           </div>
@@ -119,7 +119,7 @@ export default function IndustriesGridMob() {
               height={379}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative z-10  w-[112px] mr-auto font-prosto text-12reg uppercase text-left">
+            <p className="relative w-[112px] mr-auto font-prosto text-12reg uppercase text-left">
               {t("it")}
             </p>
           </div>

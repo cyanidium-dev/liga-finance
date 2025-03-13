@@ -14,7 +14,7 @@ export default function Footer() {
         height={586}
         className="tab:hidden absolute z-10 bottom-[40px] -right-7 w-[159px] h-auto"
       />
-      <div className="container max-w-[1920px]">
+      <div className="container max-w-[1280px]">
         <Logo
           className="w-6 tab:w-[45px] h-auto"
           textStyles="text-12reg tab:text-24reg"
