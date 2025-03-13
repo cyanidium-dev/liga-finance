@@ -13,7 +13,7 @@ export default function DiasadvantagesList() {
   ];
 
   return (
-    <ul className="flex flex-col gap-y-4 xl:gap-y-6 max-w-[534px] mx-auto">
+    <ul className="flex flex-col gap-y-4 xl:gap-y-6 mx-auto">
       {disadvantagesList.map((disadvantageItem, idx) => (
         <DisadvanatageItem key={idx} disadvantageItem={disadvantageItem} />
       ))}
