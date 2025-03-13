@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import { Locale } from "@/types/locale";
 import { generatePageMetaData } from "@/utils/generatePageMetadata";
 import "./globals.css";
+import Providers from "./providers";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -56,9 +57,11 @@ export default async function LocaleLayout({
         className={`${montserrat.variable} ${prosto.variable} flex min-h-screen flex-col antialiased text-12light lg:text-16light`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="flex-1"> {children}</main>
-          <Footer />
+          <Providers>
+            <Header />
+            <main className="flex-1"> {children}</main>
+            <Footer />
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>
