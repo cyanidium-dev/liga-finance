@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section className="relative pt-3 xl:pt-[44px] pb-20 xl:pb-[70px] overflow-hidden">
       <HeroImages />
-      <div className="container max-w-[1920px]">
+      <div className="container max-w-[1280px]">
         <h2 className="mb-[314px] tab:mb-[271px] w-[177px] tab:w-[323px] font-prosto text-14reg tab:text-24reg uppercase">
           {renderTextWithBreaks(t("homePage.hero.subtitle"))}
         </h2>

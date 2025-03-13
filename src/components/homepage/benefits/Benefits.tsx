@@ -7,7 +7,7 @@ export default function Benefits() {
 
   return (
     <section className="relative -z-20  pt-[100px] pb-[231px] tab:py-[110px] bg-white">
-      <div className="container max-w-[1920px]">
+      <div className="container max-w-[1280px]">
         {" "}
         <h2 className="mb-12 font-prosto uppercase text-center moblg:text-left text-20reg xl:text-36reg leading-[100%] text-black">
           {t("title")}

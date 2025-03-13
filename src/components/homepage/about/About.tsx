@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <section id="about" className="relative -z-20 bg-white scroll-mt-12">
-      <div className="flex flex-col tab:flex-row-reverse gap-y-20 tab:gap-x-[117px] container max-w-[1920px] pt-[100px] xl:pt-[110px] pb-[95px] xl:pb-[175px]">
+      <div className="flex flex-col tab:flex-row-reverse gap-y-20 tab:gap-x-[117px] container max-w-[1280px] pt-[100px] xl:pt-[110px] pb-[95px] xl:pb-[175px]">
         <div className="flex flex-col justify-between">
           <h2 className="mb-[18px] tab:mb-7 font-prosto text-14reg tab:text-24reg xl:text-36reg uppercase text-black leading-[130%]">
             {t("titleFirst")}
