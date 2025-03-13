@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { usePathname, useRouter } from "@/i18n/navigation";
@@ -27,11 +27,41 @@ export default function LocaleSwitcher() {
     setIsOpen(false);
   };
 
+  const handleClickOutside = useCallback((event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setIsOpen(false);
+    }
+  }, []);
+
+  const handleKeyDown = useCallback((event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      setIsOpen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener("click", handleClickOutside);
+      document.addEventListener("keydown", handleKeyDown);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, handleClickOutside, handleKeyDown]);
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2"
+        className="flex items-center gap-2 px-3 py-2 outline-none"
       >
         <span className="text-14med xl:text-16bold">
           {currentLocale === "uk" ? "UA" : "EN"}
