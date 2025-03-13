@@ -15,7 +15,7 @@ export default function IndustriesGridMob() {
             height={571}
             className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
           />
-          <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+          <p className="relative w-[92px] ml-auto font-prosto text-12reg uppercase text-right">
             {t("trade")}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function IndustriesGridMob() {
               height={241}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+            <p className="relative w-[112px] ml-auto font-prosto text-12reg uppercase text-right">
               {t("agricultural")}
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function IndustriesGridMob() {
               height={201}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative w-[82px] ml-auto font-prosto text-12reg uppercase text-right">
+            <p className="relative w-[92px] ml-auto font-prosto text-12reg uppercase text-right">
               {t("advertisement")}
             </p>
           </div>

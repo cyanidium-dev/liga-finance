@@ -9,7 +9,7 @@ export default function GetConsultation() {
   return (
     <section
       id="consultation"
-      className="relative pt-[140px] pb-[120px] tab:py-[108px] tab:mb-[180px] overflow-hidden scroll-mt-12"
+      className="relative pt-[140px] pb-[120px] tab:py-[108px] tab:mb-[180px] overflow-hidden scroll-mt-16"
     >
       <Image
         src="/images/getConsultation/building.webp"
