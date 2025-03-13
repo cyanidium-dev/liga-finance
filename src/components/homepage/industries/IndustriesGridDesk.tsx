@@ -5,7 +5,7 @@ export default function IndustriesGridDesk() {
   const t = useTranslations("homePage.industries");
 
   return (
-    <div className="hidden sm:grid xl:grid-cols-[0.99fr_1.01fr] gap-5">
+    <div className="hidden sm:grid xl:grid-cols-[1fr_1fr] gap-5">
       {/* Перший стовпчик */}
       <div className="grid grid-cols-[0.96fr_2.03fr] gap-5 h-full">
         <div className="relative flex flex-col justify-end aspect-[173/497] p-[18px]">
@@ -99,7 +99,7 @@ export default function IndustriesGridDesk() {
               height={612}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative w-[165px] ml-auto font-prosto text-18reg uppercase text-right">
+            <p className="relative w-[106px] ml-auto font-prosto text-18reg uppercase text-right">
               {t("advertisement")}
             </p>
           </div>
