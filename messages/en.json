@@ -1,199 +1,198 @@
 {
   "metadata": {
-    "title": "FINANCE LEAGUE | Комплексні бухгалтерські та юридичні послуги",
-    "description": "Ведення бухгалтерії, юридичні консультації, реєстрація бізнесу, фінансова аналітика та електронний документообіг."
+    "title": "FINANCE LEAGUE | Comprehensive Accounting and Legal Services",
+    "description": "Accounting management, legal consultations, business registration, financial analytics, and electronic document workflow."
   },
   "homePage": {
     "hero": {
-      "title": "Бухгалтерський супровід бізнесу",
-      "subtitle": "– без помилок,<br/> без ризиків,<br/> без зайвих витрат!",
-      "description": "Довірте фінанси професіоналам та зосередьтеся на розвитку свого бізнесу. Звіти, податки, зарплати – ми все зробимо за вас! "
+      "title": "Business accounting Support",
+      "subtitle": "– No mistakes, no risks, no additional costs!",
+      "description": "Entrust your finances to professionals and focus on growing your business. Reports, taxes, payroll – we handle it all for you!"
     },
     "about": {
-      "titleFirst": "Ліга Фінансів - компанія, яка надає професійні аутсорсингові бухгалтерські послуги",
-      "descriptionFirst": "Команда наших бухгалтерів, фінансистів та юристів забезпечує комплексний підхід у вирішенні поточних та стратегічних завдань, індивідуальні рішення для кожного клієнта з урахуванням специфіки роботи.",
-      "titleSecond": "Бухгалтерський облік та юридичні послуги",
-      "descriptionSecond": "Ми вміємо спростити ведення бізнесу, надавши Вам впевнене керування бізнес-процесами, оптимізацію власної діяльності та дозволити Вам займатись розвитком та вдосконаленням своєї справи, незалежно від масштабу Вашого підприємництва."
+      "titleFirst": "Finance League – a company providing professional outsourced accounting services",
+      "descriptionFirst": "Our team of accountants, financial experts, and lawyers ensures a comprehensive approach to solving both current and strategic tasks, offering tailored solutions for each client based on their specific business needs.",
+      "titleSecond": "Accounting and Legal Services",
+      "descriptionSecond": "We simplify business operations by providing you with confident business process management, optimizing your activities, and allowing you to focus on growth and improvement, regardless of the scale of your enterprise."
     },
     "services": {
       "accountingServices": {
-        "title": "Бухгалтерські послуги",
+        "title": "Accounting services",
         "list": {
-          "first": "Ведення ФОП",
-          "second": "Комплексний супровід",
-          "third": "Кадровий облік",
-          "fourth": "Отримання витягів з реєстрів",
-          "fifth": "Консультаційні послуги"
+          "first": "Sole proprietor accounting",
+          "second": "Comprehensive support",
+          "third": "Payroll and HR records",
+          "fourth": "Obtaining extracts from registers",
+          "fifth": "Consulting services"
         }
       },
       "legalServices": {
-        "title": "Юридичні послуги",
+        "title": "Legal services",
         "list": {
-          "first": "Реєстрація ТОВ, ФОП",
-          "second": "Юридичні консультації",
-          "third": "Трудові договори",
-          "fourth": "Підготування документів для розблокування",
-          "fifth": "Внесення змін до ФОП, ТОВ"
+          "first": "Business registration",
+          "second": "Legal consultations",
+          "third": "Employment contracts",
+          "fourth": "Preparation of documents for unblocking",
+          "fifth": "Amendments to businesses"
         }
       },
       "financialServices": {
-        "title": "Фінансове управління",
+        "title": "Financial management",
         "list": {
-          "first": "Електронний документообіг",
-          "second": "Фінансова звітність",
-          "third": "PL звітність",
-          "fourth": "Cash flow звітність",
-          "fifth": "Інтеграції з CRM системами"
+          "first": "Electronic document workflow",
+          "second": "Financial reporting",
+          "third": "P&L reporting",
+          "fourth": "Cash flow reporting",
+          "fifth": "CRM system integrations"
         }
       }
     },
     "getCalculation": {
-      "title": "Отримай бухгалтерський розрахунок",
-
-      "description": "Візьмемо на себе всі бухгалтерські, податкові та фінансові питання, щоб ви могли зосередитися на головному – розвитку вашого бізнесу."
+      "title": "Get your accounting estimate",
+      "description": "We take care of all accounting, tax, and financial matters so you can focus on what truly matters – growing your business."
     },
     "industries": {
-      "title": "Галузі, з якими ми працюємо",
-      "trade": "Оптова, роздрібна торгівля",
-      "agricultural": "Аграрний сектор",
-      "manufacturing": "Виробництво",
-      "services": "Послуги",
-      "charity": "Неприбуткові благодійні організації",
-      "advertisement": "ЗМІ та реклама",
-      "it": "ІТ-індустрія та технології",
-      "medicine": "Медицина й фармацевтика",
-      "construction": "Будівництво та ремонт"
+      "title": "Industries we work with",
+      "trade": "Wholesale, retail trade",
+      "agricultural": "Agriculture",
+      "manufacturing": "Manufacturing",
+      "services": "Services",
+      "charity": "Non-profit charitable organizations",
+      "advertisement": "Media and advertising",
+      "it": "IT industry and technology",
+      "medicine": "Medicine",
+      "construction": "Construction and repair"
     },
     "statistics": {
-      "clients": "Радісних клієнтів",
-      "deals": "Успішних справ",
-      "calls": "Корисних дзвінків",
-      "consultations": "Консультацій"
+      "clients": "Happy clients",
+      "deals": "Successful deals",
+      "calls": "Useful calls",
+      "consultations": "Consultations"
     },
     "clients": {
-      "title": "Наші клієнти"
+      "title": "Our clients"
     },
     "calculator": {
-      "title": "Калькулятор вартості послуг",
-      "employees": "Кількість працівників компанії",
-      "operations": "Кількість операцій на місяць",
+      "title": "Service cost calculator",
+      "employees": "Number of company employees",
+      "operations": "Number of operations per month",
       "ownership": {
-        "title": "Форма власності",
-        "tov": "ТОВ",
-        "fop": "ФОП",
-        "other": "Інше"
+        "title": "Ownership form",
+        "tov": "LLC",
+        "fop": "Sole Proprietor",
+        "other": "Other"
       },
-      "estimatedCost": "Орієнтовна вартість: ",
-      "hrnPerMonth": " грн/міс"
+      "estimatedCost": "Estimated cost: ",
+      "hrnPerMonth": " UAH/month"
     },
     "getSuccess": {
-      "title": "Бухгалтерія, яка працює на ваш успіх!",
-      "description": "Візьмемо на себе всі бухгалтерські, податкові та фінансові питання, щоб ви могли зосередитися на головному – розвитку вашого бізнесу."
+      "title": "Accounting that works for your success!",
+      "description": "We take care of all accounting, tax, and financial matters so you can focus on what truly matters – growing your business."
     },
     "disadvantages": {
-      "title": "Мінуси ведення бухгалтерії самостійно",
-      "first": "Втрата часу – замість розвитку бізнесу доводиться розбиратися у звітах, податках і бухгалтерських нюансах.",
-      "second": "Ризик помилок – навіть незначна неточність у розрахунках чи податковій звітності може призвести до штрафів.",
-      "third": "Зміни в законодавстві – бухгалтерські норми постійно оновлюються, і без професійного супроводу легко пропустити важливі зміни.",
-      "fourth": "Відсутність оптимізації – без глибокого знання фінансів можна переплачувати податки та не використовувати доступні пільги.",
-      "fifth": "Стрес і відповідальність – фінансові помилки можуть коштувати бізнесу репутації та грошей."
+      "title": "Disadvantages of handling accounting yourself",
+      "first": "Time loss – instead of growing your business, you have to deal with reports, taxes, and accounting details.",
+      "second": "Risk of mistakes – even a minor inaccuracy in calculations or tax reporting can lead to fines.",
+      "third": "Changes in legislation – accounting norms are constantly updated, and without professional support, it’s easy to miss important changes.",
+      "fourth": "Lack of optimization – without deep financial knowledge, you may overpay taxes and miss out on available benefits.",
+      "fifth": "Stress and responsibility – financial mistakes can cost your business reputation and money."
     },
     "benefits": {
-      "title": "Переваги роботи з нами",
-      "first": "Економія часу – ми беремо на себе всю бухгалтерію, щоб ви могли зосередитися на розвитку бізнесу.",
-      "second": "Безпека та точність – гарантуємо правильність обліку та звітності, мінімізуючи ризики штрафів і помилок.",
-      "third": "Актуальність знань – слідкуємо<br/> за всіма змінами в законодавстві<br/> та своєчасно адаптуємо вашу<br/> бухгалтерію.",
-      "fourth": "Безкоштовна консультація –<br/> переконайтеся в нашому<br/> професіоналізмі<br/> вже сьогодні!"
+      "title": "Benefits of working with us",
+      "first": "Time savings – we take care of all accounting so you can focus on growing your business.",
+      "second": "Safety and accuracy – we guarantee the correctness of accounting and reporting, minimizing the risks of fines and mistakes.",
+      "third": "Relevance of knowledge – we monitor all changes in legislation and promptly adapt your accounting.",
+      "fourth": "Free consultation – see our professionalism today!"
     },
     "steps": {
-      "title": "Етапи роботи з нами",
-      "firstTitle": "Етап перший",
-      "firstDescription": "Надаємо комплексну консультацію",
-      "secondTitle": "Етап другий",
-      "secondDescription": "Підписуємо договір",
-      "thirdTitle": "Етап третій",
-      "thirdDescription": "Просимо надати доступи",
-      "fourthTitle": "Етап четвертий",
-      "fourthDescription": "Закріплюємо бухгалтера та починаємо"
+      "title": "Steps to work with us",
+      "firstTitle": "Step one",
+      "firstDescription": "We provide a comprehensive consultation",
+      "secondTitle": "Step two",
+      "secondDescription": "We sign the contract",
+      "thirdTitle": "Step three",
+      "thirdDescription": "We request access details",
+      "fourthTitle": "Step four",
+      "fourthDescription": "We assign an accountant and begin"
     },
     "team": {
-      "title": "Наша команда – ваш надійний фінансовий партнер",
-      "description": "Ми – команда досвідчених бухгалтерів, податкових консультантів та фінансових експертів, які працюють для вашого успіху.",
+      "title": "Our team – your reliable financial partner",
+      "description": "We are a team of experienced accountants, tax consultants, and financial experts working for your success.",
       "first": {
-        "name": "Анастасія Охрін",
-        "role": "Провідний бухгалтер"
+        "name": "Anastasia Okhrin",
+        "role": "Lead accountant"
       },
       "second": {
-        "name": "Ірина Білик",
-        "role": "Бухгалтер"
+        "name": "Irina Bilyk",
+        "role": "Accountant"
       },
       "third": {
-        "name": "Ольга Звозда",
-        "role": "Бухгалтер"
+        "name": "Olga Zvozda",
+        "role": "Accountant"
       },
       "fourth": {
-        "name": "Андріана Котова",
-        "role": "Бухгалтер"
+        "name": "Andriana Kotova",
+        "role": "Accountant"
       }
     },
     "getConsultation": {
-      "title": "Отримай консультацію за лічені хвилини!",
-      "description": "Залиш свої дані та менеджер зв’яжеться з вами вже прямо зараз. Отримай безкоштовну консультацію та розрахунок."
+      "title": "Get a consultation in minutes!",
+      "description": "Leave your details, and a manager will contact you right now. Get a free consultation and calculation."
     }
   },
   "buttons": {
-    "leaveContacts": "Залишити контакти",
-    "freeConsultation": "Безкоштовна консультація",
-    "sendMessage": "Надіслати",
-    "sending": "Надсилання..."
+    "leaveContacts": "Leave contacts",
+    "freeConsultation": "Free consultation",
+    "sendMessage": "Send message",
+    "sending": "Sending..."
   },
   "header": {
     "freeConsultation": {
-      "title": "Хочеш отримати безкоштовну консультацію?",
-      "description": "Залиш свої дані, та менеджер зв’яжеться з вами вже прямо зараз"
+      "title": "Want a free consultation?",
+      "description": "Leave your details, and a manager will contact you right now."
     },
     "menu": {
-      "about": "Про нас",
-      "services": "Наші послуги",
-      "industries": "Галузі",
-      "calculator": "Калькулятор послуг",
-      "comparison": "Порівняння",
-      "steps": "Процес роботи",
-      "team": "Наша команда",
-      "clients": "Наші клієнти"
+      "about": "About us",
+      "services": "Our services",
+      "industries": "Industries",
+      "calculator": "Service calculator",
+      "comparison": "Comparison",
+      "steps": "Working process",
+      "team": "Our team",
+      "clients": "Our clients"
     }
   },
   "footer": {
-    "phone": "Тел: ",
+    "phone": "Phone: ",
     "email": "Email: ",
     "address": {
-      "first": "вул. Хрещатик, 22",
-      "second": "м. Київ, 01001, Україна"
+      "first": "22 Khreshchatyk St.",
+      "second": "Kyiv, 01001, Ukraine"
     },
-    "menu": "Меню сайту",
-    "rights": "© 2025 Finance ligue",
-    "develop": "Сайт розробили - "
+    "menu": "Site menu",
+    "rights": "© 2025 Finance Ligue",
+    "develop": "Website developed by - "
   },
   "forms": {
-    "namePlaceholder": "Iм’я",
-    "phonePlaceholder": "Номер телефону",
+    "namePlaceholder": "Name",
+    "phonePlaceholder": "Phone number",
     "errors": {
-      "required": "Дане поле є обов'язковим до заповнення",
-      "wrongPhone": "Вкажіть правильний номер телефону",
-      "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
-      "nameAllowedSymbols": "Допустимі літери та дефіс, апостроф, лапки",
-      "startsWithZero": "Номер телефону має починатися з нуля"
+      "required": "This field is required",
+      "wrongPhone": "Please enter a valid phone number",
+      "nameMinMaxSymbols": "Name must be between 2 and 30 characters",
+      "nameAllowedSymbols": "Allowed letters, hyphen, apostrophe, and quotes",
+      "startsWithZero": "Phone number must start with zero"
     }
   },
   "popUps": {
     "notifications": {
       "successful": {
-        "title": "Ваша заявка успішно надіслана!",
-        "description": "Наші менеджери вже обробляють ваше звернення та зв’яжуться з вами найближчим часом."
+        "title": "Your request has been successfully sent!",
+        "description": "Our managers are already processing your request and will contact you shortly."
       },
       "unsuccessful": {
-        "title": "Збій у відправленні заявки!",
-        "description": "На жаль, щось пішло не так. Будь ласка, спробуйте відправити заявку ще раз або зателефонуйте нам."
+        "title": "Request submission failed!",
+        "description": "Unfortunately, something went wrong. Please try submitting your request again or call us."
       }
     }
   }

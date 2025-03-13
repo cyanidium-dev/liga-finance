@@ -30,7 +30,7 @@ export default function IndustriesGridDesk() {
                 height={612}
                 className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
               />
-              <p className="relative w-[82px] mr-auto font-prosto text-18reg uppercase text-left">
+              <p className="relative w-[92px] mr-auto font-prosto text-18reg uppercase text-left">
                 {t("agricultural")}
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function IndustriesGridDesk() {
               height={612}
               className="absolute top-0 left-0 w-full h-full rounded-[8px] object-cover"
             />
-            <p className="relative w-[106px] ml-auto font-prosto text-18reg uppercase text-right">
+            <p className="relative w-[134px] ml-auto font-prosto text-18reg uppercase text-right">
               {t("advertisement")}
             </p>
           </div>
