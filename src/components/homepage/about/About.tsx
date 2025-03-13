@@ -35,7 +35,7 @@ export default function About() {
               alt="logo"
               width="389"
               height="177"
-              className="hidden tab:block absolute -z-10 bottom-[-95px] xl:bottom-[-175px] left-0 w-[212px] xl:w-[389px] h-auto"
+              className="hidden tab:block absolute -z-10 bottom-[-95px] xl:bottom-[-175px] left-[2px] w-[212px] xl:w-[389px] h-auto"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function About() {
               alt="logo"
               width="389"
               height="177"
-              className="tab:hidden absolute -z-10 bottom-[-95px] left-0 w-[212px] h-auto"
+              className="tab:hidden absolute -z-10 bottom-[-95px] left-[2px] w-[212px] h-auto"
             />
           </div>
         </div>
