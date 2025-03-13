@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import BurgerMenuButton from "./BurgerMenuButton";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "../logo/Logo";
 import SecondaryButton from "../buttons/SecondaryButton";
@@ -10,10 +9,10 @@ import { PHONE } from "@/constants/constants";
 import { headerPhoneRegex } from "@/regex/regex";
 import Image from "next/image";
 import Backdrop from "../backdrop/Backdrop";
+import BurgerButton from "./BurgerButton";
 
 export default function Header() {
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
-  const toggleHeaderMenuOpen = () => setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
   return (
     <header className="fixed z-10 w-dvw py-6 xl:py-[30.5px] backdrop-blur-lg supports-[backdrop-blur]:before:backdrop-blur-lg will-change-transform bg-black bg-opacity-40">
@@ -41,10 +40,7 @@ export default function Header() {
             </SecondaryButton>
           </a>
 
-          <BurgerMenuButton
-            isHeaderMenuOpened={isHeaderMenuOpened}
-            toggleHeaderMenuOpen={toggleHeaderMenuOpen}
-          />
+          <BurgerButton setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
           <BurgerMenu
             isHeaderMenuOpened={isHeaderMenuOpened}
             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
