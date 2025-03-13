@@ -54,7 +54,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="scroll-smooth">
       <body
-        className={`${montserrat.variable} ${prosto.variable} flex min-h-screen flex-col antialiased text-12light lg:text-16light`}
+        className={`${montserrat.variable} ${prosto.variable} relative z-[1] flex min-h-screen flex-col antialiased text-12light lg:text-16light`}
       >
         <NextIntlClientProvider messages={messages}>
           <Providers>
