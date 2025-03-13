@@ -17,7 +17,7 @@ export default function GetCalculation() {
       />
 
       <div className="relative container max-w-[1280px]">
-        <div className="max-w-[520px] tab:max-w-[376px] desk:max-w-[520px] mx-auto tab:mx-0">
+        <div className="max-w-[520px] tab:max-w-[376px] mx-auto tab:mx-0">
           <h2 className="mb-6 xl:mb-7 font-prosto uppercase text-center tab:text-left text-24reg xl:text-32reg leading-[125%]">
             {t("title")}
           </h2>
