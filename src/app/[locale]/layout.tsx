@@ -29,7 +29,7 @@ const prosto = Prosto_One({
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
   return generatePageMetaData({
