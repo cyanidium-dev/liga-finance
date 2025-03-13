@@ -29,7 +29,7 @@ const prosto = Prosto_One({
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
   return generatePageMetaData({
@@ -57,7 +57,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main className="flex-1 pt-[88px]"> {children}</main>
+          <main className="flex-1"> {children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

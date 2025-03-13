@@ -10,7 +10,7 @@ export default function Industries() {
       id="industries"
       className="py-[100px] xl:py-[110px] scroll-mt-12 bg-white"
     >
-      <div className="container max-w-[1920px] ">
+      <div className="container max-w-[1280px] ">
         <h2 className="mb-12 font-prosto uppercase text-center text-20reg xl:text-36reg leading-[100%] text-black">
           {t("title")}
         </h2>

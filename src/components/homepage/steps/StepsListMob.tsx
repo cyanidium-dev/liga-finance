@@ -5,7 +5,7 @@ export default function StepsListMob() {
   const t = useTranslations("homePage.steps");
   return (
     <ul className="sm:hidden">
-      <li className="relative -z-20 flex items-center gap-x-[103px] container max-w-[1920px] bg-main">
+      <li className="relative -z-20 flex items-center gap-x-[103px] container max-w-[1280px] bg-main">
         <span className="text-100reg xl:text-276reg">1</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -26,7 +26,7 @@ export default function StepsListMob() {
           className="absolute top-0 left-0 -z-10 w-auto h-full"
         />
       </li>
-      <li className="relative flex items-center gap-x-[83px] container max-w-[1920px] text-black">
+      <li className="relative flex items-center gap-x-[83px] container max-w-[1280px] text-black">
         <span className="text-100reg xl:text-276reg">2</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -47,7 +47,7 @@ export default function StepsListMob() {
           className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
       </li>
-      <li className="flex items-center gap-x-[83px] container max-w-[1920px] bg-blue">
+      <li className="flex items-center gap-x-[83px] container max-w-[1280px] bg-blue">
         <span className="text-100reg xl:text-276reg">3</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -61,7 +61,7 @@ export default function StepsListMob() {
           </p>
         </div>
       </li>
-      <li className="relative flex items-center gap-x-[73px] container max-w-[1920px]">
+      <li className="relative flex items-center gap-x-[73px] container max-w-[1280px]">
         <span className="text-100reg xl:text-276reg">4</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">

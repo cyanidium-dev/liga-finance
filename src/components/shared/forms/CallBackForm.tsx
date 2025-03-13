@@ -60,7 +60,7 @@ export default function CallBackForm({
       validationSchema={validationSchema}
     >
       {({ errors, touched, dirty, isValid }) => (
-        <Form className="flex flex-col w-full h-full gap-y-6">
+        <Form className="flex flex-col w-full h-full gap-y-5">
           <CustomizedInput
             fieldName="name"
             placeholder={t("forms.namePlaceholder")}

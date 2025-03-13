@@ -17,13 +17,15 @@ export async function generatePageMetaData({
     namespace,
   });
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
+  const metadataBase = baseUrl ? new URL(baseUrl) : "";
 
   const localizedCanonical =
     locale === "uk" ? canonical : `/${locale}${canonical}`;
 
   return {
-    metadataBase: new URL(baseUrl),
+    metadataBase,
     alternates: {
       canonical: localizedCanonical,
       languages: {

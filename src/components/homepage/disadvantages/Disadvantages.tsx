@@ -6,7 +6,7 @@ export default function Disadvantages() {
   return (
     <section
       id="comparison"
-      className="container max-w-[1920px] py-[100px] xl:py-[180px] scroll-mt-12"
+      className="container max-w-[1280px] py-[100px] xl:py-[180px] scroll-mt-12"
     >
       <div className="max-w-[571px] desk:max-w-[834px] mx-auto">
         <h2 className="max-w-[571px] desk:max-w-[834px] mb-9 xl:mb-12 mx-auto font-prosto text-20reg xl:text-36reg uppercase text-center">

@@ -21,7 +21,7 @@ export default function SubmitButton({
       type="submit"
       disabled={!(dirty && isValid) || isLoading}
       isLoading={isLoading}
-      className="w-full mt-6"
+      className="w-full"
     >
       {isLoading ? t("sending") : t("sendMessage")}
     </WhiteButton>
