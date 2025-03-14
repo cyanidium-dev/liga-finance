@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import RadioButtonInput from "./RadioButtonInput";
+import AnimatedListItem from "@/components/shared/animatedWrapper/AnimatedListItem";
 
 interface RadioButtonGroupProps {
   handleChange: (value: string) => void;
@@ -14,7 +15,7 @@ export default function RadioButtonGroup({
   const t = useTranslations("homePage.calculator.ownership");
 
   return (
-    <li className="relative w-full bg-main py-7 xl:py-10 px-5 xl:px-[23px] rounded-[6px] min-h-[150px] xl:min-h-[190px] flex flex-col justify-center text-white">
+    <AnimatedListItem className="relative w-full bg-main py-7 xl:py-10 px-5 xl:px-[23px] rounded-[6px] min-h-[150px] xl:min-h-[190px] flex flex-col justify-center text-white">
       <Image
         src="/images/calculator/logos.svg"
         alt="logos"
@@ -52,6 +53,6 @@ export default function RadioButtonGroup({
           onChange={handleChange}
         />
       </div>
-    </li>
+    </AnimatedListItem>
   );
 }

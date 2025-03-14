@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-interface AnimatedServicesListProps {
+interface AnimatedListItemProps {
   children: ReactNode;
   className: string;
 }
@@ -16,10 +16,10 @@ const itemVariants = {
   },
 };
 
-export default function AnimatedServicesList({
+export default function AnimatedListItem({
   children,
   className = "",
-}: AnimatedServicesListProps) {
+}: AnimatedListItemProps) {
   return (
     <motion.li variants={itemVariants} className={className}>
       {children}
