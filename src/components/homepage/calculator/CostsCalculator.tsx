@@ -4,6 +4,9 @@ import { useTranslations } from "next-intl";
 import RangeInput from "./RangeInput";
 import RadioButtonGroup from "./RadioButtonGroup";
 import { options } from "./calculationOptions";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import { motion } from "framer-motion";
+import { listVariants, fadeInAnimation } from "@/helpers/animation";
 
 export default function CostsCalculator() {
   const t = useTranslations("homePage.calculator");
@@ -34,7 +37,12 @@ export default function CostsCalculator() {
 
   return (
     <>
-      <ul className="flex flex-col sm:flex-row gap-4">
+      <AnimatedWrapper
+        as={motion.ul}
+        viewport={{ once: true, amount: 0.4 }}
+        animation={listVariants({ staggerChildren: 0.5, delayChildren: 0.8 })}
+        className="flex flex-col sm:flex-row gap-4"
+      >
         {rangeInputData.map(({ label, maxValue }, idx) => (
           <RangeInput
             key={idx}
@@ -52,12 +60,15 @@ export default function CostsCalculator() {
           handleChange={setOwnershipForm}
           selectedValue={ownershipForm}
         />
-      </ul>
-      <div className="mt-4 px-[14px] xl:px-4 py-[17px] xl:py-[21px] rounded-[6px] bg-black text-16reg leading-none text-center">
+      </AnimatedWrapper>
+      <AnimatedWrapper
+        animation={fadeInAnimation({ x: 100, delay: 2.6 })}
+        className="mt-4 px-[14px] xl:px-4 py-[17px] xl:py-[21px] rounded-[6px] bg-black text-16reg leading-none text-center"
+      >
         {t("estimatedCost")}
         {estimatedCost}
         {t("hrnPerMonth")}
-      </div>
+      </AnimatedWrapper>
     </>
   );
 }

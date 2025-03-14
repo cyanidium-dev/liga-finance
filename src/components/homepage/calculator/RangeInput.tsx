@@ -1,5 +1,6 @@
 "use client";
 import { Slider } from "@heroui/react";
+import AnimatedListItem from "@/components/shared/animatedWrapper/AnimatedListItem";
 
 interface RangeInputProps {
   label: string;
@@ -15,7 +16,7 @@ export default function RangeInput({
   handleChange,
 }: RangeInputProps) {
   return (
-    <li className="w-full bg-main py-7 xl:py-10 px-5 xl:px-[23px] rounded-[6px] min-h-[150px] xl:min-h-[190px]">
+    <AnimatedListItem className="w-full bg-main py-7 xl:py-10 px-5 xl:px-[23px] rounded-[6px] min-h-[150px] xl:min-h-[190px]">
       <Slider
         classNames={{
           track: "bg-white h-[1.5px] xl:h-[2px] mt-auto border-x-[0px]",
@@ -56,6 +57,6 @@ export default function RangeInput({
         startContent="1"
         endContent={`${maxValue === 150 ? `${maxValue}+` : maxValue}`}
       />
-    </li>
+    </AnimatedListItem>
   );
 }
