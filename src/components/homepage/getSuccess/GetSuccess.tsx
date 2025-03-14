@@ -2,6 +2,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import GetSuccessImages from "./GetSuccessImages";
 import CallBackApplication from "@/components/shared/callBackApllication/CallBackApplication";
+import { motion } from "framer-motion";
+import { fadeInAnimation } from "@/helpers/animation";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
 
 export default function GetSuccess() {
   const t = useTranslations("homePage.getSuccess");
@@ -18,12 +21,20 @@ export default function GetSuccess() {
 
       <div className="relative container max-w-[1280px]">
         <div className="max-w-[520px] tab:max-w-[376px] mx-auto tab:mr-0 tab:ml-auto xl:mr-[124px]">
-          <h2 className="mb-6 xl:mb-7 font-prosto uppercase text-center tab:text-left text-24reg xl:text-32reg leading-[130%]">
+          <AnimatedWrapper
+            as={motion.h2}
+            animation={fadeInAnimation({ x: 100 })}
+            className="mb-6 xl:mb-7 font-prosto uppercase text-center tab:text-left text-24reg xl:text-32reg leading-[130%]"
+          >
             {t("title")}
-          </h2>
-          <p className="mb-8 xl:mb-12 text-center tab:text-left">
+          </AnimatedWrapper>
+          <AnimatedWrapper
+            as={motion.p}
+            animation={fadeInAnimation({ x: -100 })}
+            className="mb-8 xl:mb-12 text-center tab:text-left leading-[125%]"
+          >
             {t("description")}
-          </p>
+          </AnimatedWrapper>
           <CallBackApplication />
         </div>
         <GetSuccessImages />
