@@ -3,6 +3,9 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import HeroImages from "./HeroImages";
 import Image from "next/image";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import { fadeInAnimation } from "@/helpers/animation";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const t = useTranslations();
@@ -22,12 +25,26 @@ export default function Hero() {
 
   return (
     <section className="relative pt-[100px] xl:pt-[145px] pb-20 xl:pb-[70px] overflow-hidden">
-      <HeroImages />
+      <Image
+        src="/images/hero/buildings.webp"
+        alt="buildings"
+        priority
+        width={2560}
+        height={1664}
+        className="absolute -z-40 top-0 left-0 w-full h-full object-cover object-right-top"
+      />
       <div className="relative container max-w-[1280px]">
-        <h2 className="mb-[314px] tab:mb-[271px] w-[177px] tab:w-[323px] font-prosto text-14reg tab:text-24reg uppercase leading-[125%]">
+        <AnimatedWrapper
+          animation={fadeInAnimation({ x: -100 })}
+          as={motion.h2}
+          className="mb-[314px] tab:mb-[271px] w-[177px] tab:w-[323px] font-prosto text-14reg tab:text-24reg uppercase leading-[125%]"
+        >
           {renderTextWithBreaks(t("homePage.hero.subtitle"))}
-        </h2>
-        <div className="flex flex-col">
+        </AnimatedWrapper>
+        <AnimatedWrapper
+          animation={fadeInAnimation({ y: 100, delay: 0.4 })}
+          className="flex flex-col"
+        >
           <h1 className="tab:order-2 mb-5 tab:mb-6 max-w-[438px] mx-auto tab:mx-0 font-prosto text-26reg tab:text-36reg uppercase text-center leading-[125%] tab:text-left">
             {t("homePage.hero.title")}
           </h1>
@@ -42,29 +59,8 @@ export default function Hero() {
               {t("buttons.freeConsultation")}
             </MainButton>
           </Link>
-        </div>
-        <Image
-          src="/images/hero/logo.webp"
-          alt="logo"
-          priority
-          width={538}
-          height={586}
-          className="absolute -z-30 top-[160px] tab:top-auto left-[calc(50%-160px)] tab:left-auto tab:bottom-[280px] tab:right-[230px] 
-          xl:bottom-[-16px] xl:right-[63px] w-[135px] tab:w-[205px] xl:w-[269px] h-auto"
-        />
-        <div
-          className="absolute -z-20 right-[143px] bottom-[-401px] size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] 
-        will-change-transform"
-        ></div>
-        <Image
-          src="/images/hero/woman.webp"
-          alt="woman"
-          priority
-          width={1466}
-          height={1384}
-          className="absolute -z-10 top-[54px] right-[calc(50%-238px)] tab:top-auto tab:bottom-[-80px] xl:bottom-[-70px] tab:right-[-160px] xl:right-[144px] 
-          w-[360px] tab:w-[653px] xl:w-[733px] h-auto"
-        />
+        </AnimatedWrapper>
+        <HeroImages />
       </div>
     </section>
   );
