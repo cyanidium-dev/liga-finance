@@ -1,11 +1,20 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import AnimatedListItem from "@/components/shared/animatedWrapper/AnimatedListItem";
+import { motion } from "framer-motion";
+import { listVariants } from "@/helpers/animation";
 
 export default function StepsListMob() {
   const t = useTranslations("homePage.steps");
   return (
-    <ul className="sm:hidden">
-      <li className="relative -z-20 flex items-center gap-x-[103px] container max-w-[1280px] bg-main">
+    <AnimatedWrapper
+      as={motion.ul}
+      viewport={{ once: true, amount: 0.4 }}
+      animation={listVariants({ staggerChildren: 0.4, delayChildren: 0.4 })}
+      className="sm:hidden"
+    >
+      <AnimatedListItem className="relative -z-20 flex items-center gap-x-[103px] container max-w-[1280px] bg-main">
         <span className="text-100reg xl:text-276reg">1</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -25,8 +34,8 @@ export default function StepsListMob() {
           height={131}
           className="absolute top-0 left-0 -z-10 w-auto h-full"
         />
-      </li>
-      <li className="relative flex items-center gap-x-[83px] container max-w-[1280px] text-black">
+      </AnimatedListItem>
+      <AnimatedListItem className="relative flex items-center gap-x-[83px] container max-w-[1280px] text-black">
         <span className="text-100reg xl:text-276reg">2</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -46,8 +55,8 @@ export default function StepsListMob() {
           height={260}
           className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
-      </li>
-      <li className="flex items-center gap-x-[83px] container max-w-[1280px] bg-blue">
+      </AnimatedListItem>
+      <AnimatedListItem className="flex items-center gap-x-[83px] container max-w-[1280px] bg-blue">
         <span className="text-100reg xl:text-276reg">3</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -60,8 +69,8 @@ export default function StepsListMob() {
             {t("thirdDescription")}
           </p>
         </div>
-      </li>
-      <li className="relative flex items-center gap-x-[73px] container max-w-[1280px]">
+      </AnimatedListItem>
+      <AnimatedListItem className="relative flex items-center gap-x-[73px] container max-w-[1280px]">
         <span className="text-100reg xl:text-276reg">4</span>
         <div className="w-[170px] mx-auto">
           <div className="flex items-center gap-x-3 xl:gap-x-[18px] mb-3">
@@ -81,7 +90,7 @@ export default function StepsListMob() {
           height={260}
           className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
-      </li>
-    </ul>
+      </AnimatedListItem>
+    </AnimatedWrapper>
   );
 }
