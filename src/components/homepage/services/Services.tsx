@@ -39,11 +39,11 @@ export default function Services() {
 
   return (
     <section id="services" className="flex justify-center scroll-mt-12">
-      <div className="flex flex-col justify-center tabxl:flex-row gap-5 max-w-[1280px] container py-[100px] lg:py-[110px] text-black">
+      <ul className="flex flex-col justify-center tabxl:flex-row gap-5 max-w-[1280px] container py-[100px] lg:py-[110px] text-black">
         {services.map((servicesList, idx) => (
           <ServicesList key={idx} servicesList={servicesList} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
