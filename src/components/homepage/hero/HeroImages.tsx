@@ -18,10 +18,11 @@ export default function HeroImages() {
           height={586}
         />
       </AnimatedWrapper>
-      <div
+      <AnimatedWrapper
+        animation={fadeInAnimation({ scale: 0.8, delay: 0.8 })}
         className="absolute -z-20 right-[143px] bottom-[-401px] size-[801px] bg-main blur-[180px] supports-[backdrop-filter]:blur-[180px] 
         will-change-transform"
-      ></div>
+      ></AnimatedWrapper>
       <AnimatedWrapper
         animation={fadeInAnimation({ scale: 0.8, delay: 0.8 })}
         className="absolute -z-10 top-[54px] right-[calc(50%-238px)] tab:top-auto tab:bottom-[-80px] xl:bottom-[-70px] tab:right-[-160px] xl:right-[144px] 
