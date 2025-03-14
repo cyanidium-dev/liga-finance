@@ -62,7 +62,7 @@ export default function CostsCalculator() {
         />
       </AnimatedWrapper>
       <AnimatedWrapper
-        animation={fadeInAnimation({ x: 100, delay: 2.6 })}
+        animation={fadeInAnimation({ x: 100, delay: 1.2 })}
         className="mt-4 px-[14px] xl:px-4 py-[17px] xl:py-[21px] rounded-[6px] bg-black text-16reg leading-none text-center"
       >
         {t("estimatedCost")}

@@ -9,7 +9,7 @@ export default function Clients() {
   return (
     <section
       id="clients"
-      className="container max-w-[1280px] py-[100px] xl:py-[180px] scroll-mt-12"
+      className="container max-w-[1280px] py-[100px] xl:py-[180px] scroll-mt-12 overflow-hidden"
     >
       <AnimatedWrapper
         as={motion.h2}

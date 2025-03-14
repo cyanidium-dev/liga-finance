@@ -7,7 +7,7 @@ export default function Steps() {
   return (
     <section
       id="steps"
-      className="pt-[100px] xl:pt-[180px] scroll-mt-6 mx-auto"
+      className="pt-[100px] xl:pt-[180px] scroll-mt-6 mx-auto overflow-hidden"
     >
       <h2 className="mb-10 xl:mb-12 font-prosto uppercase text-20reg xl:text-36reg text-center">
         {t("title")}

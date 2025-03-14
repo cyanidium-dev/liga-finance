@@ -6,7 +6,7 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="container max-w-[1280px] py-[100px] xl:py-[180px]"
+      className="container max-w-[1280px] py-[100px] xl:py-[180px] overflow-hidden"
     >
       <h2 className="max-w-[758px] mb-6 xl:mb-7 font-prosto text-20reg xl:text-36reg uppercase">
         {t("title")}

@@ -41,7 +41,10 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="flex justify-center scroll-mt-12">
+    <section
+      id="services"
+      className="flex justify-center scroll-mt-12 overflow-hidden"
+    >
       <AnimatedWrapper
         as={motion.ul}
         viewport={{ once: true, amount: 0.4 }}

@@ -26,7 +26,7 @@ export default function Benefits() {
           alt="background"
           width={1102}
           height={1036}
-          className="tab:hidden absolute bottom-[-364px] sm:bottom-[-398px] right-[-80px] -z-10 w-auto h-[510px] sm:h-[660px] object-cover"
+          className="tab:hidden absolute bottom-[-364px] sm:bottom-[-398px] right-[-80px] -z-10 w-auto h-[510px] sm:h-[660px] object-cover overflow-visible"
         />
       </div>
     </section>
