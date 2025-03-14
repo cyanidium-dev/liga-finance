@@ -1,5 +1,8 @@
 import { useTranslations } from "next-intl";
 import Teammate from "./Teammate";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import { motion } from "framer-motion";
+import { listVariants } from "@/helpers/animation";
 
 export default function TeamList() {
   const t = useTranslations("homePage.team");
@@ -13,7 +16,12 @@ export default function TeamList() {
 
   return (
     <div className="flex justify-center">
-      <ul className="flex flex-wrap gap-3 xl:gap-5 w-full max-w-[511px] lg:max-w-[1260px]">
+      <AnimatedWrapper
+        as={motion.ul}
+        viewport={{ once: true, amount: 0.4 }}
+        animation={listVariants({ staggerChildren: 0.4, delayChildren: 1 })}
+        className="flex flex-wrap gap-3 xl:gap-5 w-full max-w-[511px] lg:max-w-[1260px]"
+      >
         {teamList.map((teammate, idx) => (
           <Teammate
             key={idx}
@@ -29,7 +37,7 @@ export default function TeamList() {
             }
           />
         ))}
-      </ul>
+      </AnimatedWrapper>
     </div>
   );
 }

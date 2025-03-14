@@ -1,11 +1,20 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import AnimatedListItem from "@/components/shared/animatedWrapper/AnimatedListItem";
+import { motion } from "framer-motion";
+import { listVariants } from "@/helpers/animation";
 
 export default function StepsListDesk() {
   const t = useTranslations("homePage.steps");
   return (
-    <ul className="hidden sm:flex">
-      <li className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)] bg-main ">
+    <AnimatedWrapper
+      as={motion.ul}
+      viewport={{ once: true, amount: 0.4 }}
+      animation={listVariants({ staggerChildren: 0.4, delayChildren: 0.4 })}
+      className="hidden sm:flex"
+    >
+      <AnimatedListItem className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)] bg-main ">
         <div className="relative flex flex-col justify-between xl:w-[320px] xl:ml-auto px-[25px] py-9 h-full">
           <div className="flex items-center justify-center gap-x-[19px] w-full min-h-[28px] xl:min-h-fit mb-[88px]">
             <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
@@ -27,8 +36,8 @@ export default function StepsListDesk() {
             className="absolute bottom-0 right-[51px] -z-10 w-auto h-[154px] object-cover overflow-visible"
           />
         </div>
-      </li>
-      <li className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[320px] px-[25px] py-9 text-black">
+      </AnimatedListItem>
+      <AnimatedListItem className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[320px] px-[25px] py-9 text-black">
         <div className="flex items-center justify-center gap-x-[19px] w-full min-h-[28px] xl:min-h-fit mb-[88px]">
           <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
             {t("secondTitle")}
@@ -50,8 +59,8 @@ export default function StepsListDesk() {
           height={248}
           className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
-      </li>
-      <li className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[320px] px-[25px] py-9 bg-blue">
+      </AnimatedListItem>
+      <AnimatedListItem className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[320px] px-[25px] py-9 bg-blue">
         <div className="flex items-center justify-center gap-x-[19px] w-full min-h-[28px] xl:min-h-fit mb-[88px]">
           <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
             {t("thirdTitle")}
@@ -63,8 +72,8 @@ export default function StepsListDesk() {
         <p className="max-w-[230px] mr-auto mt-auto font-prosto text-12reg tab:text-16reg xl:text-20reg uppercase leading-[130%]">
           {t("thirdDescription")}
         </p>
-      </li>
-      <li className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)]">
+      </AnimatedListItem>
+      <AnimatedListItem className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)]">
         <div className="xl:w-[320px] xl:mr-auto px-[25px] py-9">
           {" "}
           <div className="flex items-center justify-center gap-x-[19px] w-full min-h-[28px] xl:min-h-fit mb-[88px]">
@@ -87,7 +96,7 @@ export default function StepsListDesk() {
           height={248}
           className="absolute top-0 left-0 -z-10 w-full h-full object-cover"
         />
-      </li>
-    </ul>
+      </AnimatedListItem>
+    </AnimatedWrapper>
   );
 }

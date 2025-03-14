@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AnimatedListItem from "@/components/shared/animatedWrapper/AnimatedListItem";
 
 interface TeammateProps {
   teammate: {
@@ -13,7 +14,7 @@ export default function Teammate({ teammate, className }: TeammateProps) {
   const { name, role, photo } = teammate;
 
   return (
-    <li className="relative flex flex-col justify-end w-[calc(50%-6px)] lg:w-[calc(25%-9px)] xl:w-[calc(25%-15px)] aspect-[149/208] h-auto max-w-[250px] lg:max-w-[375px] p-3 rounded-[6px] overflow-hidden">
+    <AnimatedListItem className="relative flex flex-col justify-end w-[calc(50%-6px)] lg:w-[calc(25%-9px)] xl:w-[calc(25%-15px)] aspect-[149/208] h-auto max-w-[250px] lg:max-w-[375px] p-3 rounded-[6px] overflow-hidden">
       <Image
         src={`/images/team/${photo}.webp`}
         alt={photo}
@@ -32,6 +33,6 @@ export default function Teammate({ teammate, className }: TeammateProps) {
         </div>
         <div className="hidden tab:block size-[17px] rounded-full bg-blue"></div>
       </div>
-    </li>
+    </AnimatedListItem>
   );
 }
