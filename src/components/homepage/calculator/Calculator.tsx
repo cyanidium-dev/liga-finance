@@ -19,7 +19,7 @@ export default function Calculator() {
           alt="logo"
           width="299"
           height="125"
-          className="absolute bottom-[-89px] xl:bottom-[-124px] left-[27px] lg:left-[70px] w-[215px] xl:w-[300px] h-auto"
+          className="absolute bottom-[-89px] xl:bottom-[-124px] left-[27px] lg:left-[71px] w-[215px] lg:w-[216px] xl:w-[301px] h-auto"
         />
       </div>
     </section>
