@@ -44,6 +44,7 @@ export default function Services() {
     <section id="services" className="flex justify-center scroll-mt-12">
       <AnimatedWrapper
         as={motion.ul}
+        viewport={{ once: true, amount: 0.4 }}
         animation={listVariants({ staggerChildren: 0.5 })}
         className="flex flex-col justify-center tabxl:flex-row gap-5 max-w-[1280px] container py-[100px] lg:py-[110px] text-black"
       >
