@@ -23,7 +23,7 @@ export default function Calculator() {
         </AnimatedWrapper>
         <CostsCalculator />
         <AnimatedWrapper
-          animation={fadeInAnimation({ y: 50, delay: 2.6 })}
+          animation={fadeInAnimation({ y: 50, delay: 1.6 })}
           className="absolute bottom-[-90px] xl:bottom-[-124px] left-[27px] lg:left-[71px] w-[218px] sm:w-[220px] xl:w-[302px] h-auto"
         >
           <Image

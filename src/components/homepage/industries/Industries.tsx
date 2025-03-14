@@ -11,7 +11,7 @@ export default function Industries() {
   return (
     <section
       id="industries"
-      className="py-[100px] xl:py-[110px] scroll-mt-12 bg-white"
+      className="py-[100px] xl:py-[110px] scroll-mt-12 bg-white overflow-x-hidden"
     >
       <div className="container max-w-[1280px] ">
         <AnimatedWrapper

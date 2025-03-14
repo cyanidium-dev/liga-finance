@@ -40,7 +40,7 @@ export default function CostsCalculator() {
       <AnimatedWrapper
         as={motion.ul}
         viewport={{ once: true, amount: 0.4 }}
-        animation={listVariants({ staggerChildren: 0.5, delayChildren: 0.8 })}
+        animation={listVariants({ staggerChildren: 0.35, delayChildren: 0.3 })}
         className="flex flex-col sm:flex-row gap-4"
       >
         {rangeInputData.map(({ label, maxValue }, idx) => (
@@ -62,7 +62,7 @@ export default function CostsCalculator() {
         />
       </AnimatedWrapper>
       <AnimatedWrapper
-        animation={fadeInAnimation({ x: 100, delay: 2.6 })}
+        animation={fadeInAnimation({ x: 50, delay: 1.6 })}
         className="mt-4 px-[14px] xl:px-4 py-[17px] xl:py-[21px] rounded-[6px] bg-black text-16reg leading-none text-center"
       >
         {t("estimatedCost")}
