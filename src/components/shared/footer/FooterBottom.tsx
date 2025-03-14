@@ -15,6 +15,7 @@ export default function FooterBottom() {
           href={CYANIDIUM_URL}
           target="_blank"
           rel="noopener noreferrer nofollow"
+          aria-label="cyanidium.dev link"
           className="lg:hover:text-blue focus-visible:text-blue transition duration-300 ease-in-out"
         >
           {CYANIDIUM_NAME}

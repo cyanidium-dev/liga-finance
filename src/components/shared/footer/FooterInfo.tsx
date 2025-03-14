@@ -13,6 +13,7 @@ export default function FooterInfo() {
             href={`tel:+${PHONE.replace(/\D/g, "")}`}
             target="_blank"
             rel="noopener noreferrer nofollow"
+            aria-label="phone number"
             className="lg:hover:text-blue focus-visible:text-blue transition duration-300 ease-in-out"
           >
             {PHONE.replace(phoneRegex, "$1($2) $3 $4 $5")}
@@ -25,6 +26,7 @@ export default function FooterInfo() {
             target="_blank"
             rel="noopener noreferrer nofollow"
             className="lg:hover:text-blue focus-visible:text-blue transition duration-300 ease-in-out"
+            aria-label="email"
           >
             {EMAIL}
           </a>
@@ -36,6 +38,7 @@ export default function FooterInfo() {
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="lg:hover:text-blue focus-visible:text-blue transition duration-300 ease-in-out"
+          aria-label="address"
         >
           <p className="mb-2">{t("address.first")}</p>
           <p>{t("address.second")}</p>

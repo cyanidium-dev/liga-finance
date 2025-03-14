@@ -27,7 +27,7 @@ export default function Header() {
             href={`tel:+${PHONE.replace(/\D/g, "")}`}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className=""
+            aria-label="phone number"
           >
             <SecondaryButton className="hidden xl:flex gap-x-[14px] items-center w-[202px]">
               <Image
