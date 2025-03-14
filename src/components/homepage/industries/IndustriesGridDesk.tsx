@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function IndustriesGridDesk() {
   const t = useTranslations("homePage.industries");
@@ -8,7 +10,10 @@ export default function IndustriesGridDesk() {
     <div className="hidden sm:grid xl:grid-cols-[1fr_1fr] gap-5">
       {/* Перший стовпчик */}
       <div className="grid grid-cols-[0.96fr_2.03fr] gap-5 h-full">
-        <div className="relative flex flex-col justify-end aspect-[173/497] p-[18px]">
+        <AnimatedWrapper
+          animation={fadeInAnimation({ y: -100, delay: 0.6 })}
+          className="relative flex flex-col justify-end aspect-[173/497] p-[18px]"
+        >
           <Image
             src="/images/industries/industryOneDesk.webp"
             alt="industry"
@@ -19,8 +24,11 @@ export default function IndustriesGridDesk() {
           <p className="relative w-[82px] mr-auto font-prosto text-18reg uppercase text-left">
             {t("trade")}
           </p>
-        </div>
-        <div className="flex flex-col gap-5 justify-between">
+        </AnimatedWrapper>
+        <AnimatedWrapper
+          animation={fadeInAnimation({ y: 100, delay: 1.2 })}
+          className="flex flex-col gap-5 justify-between"
+        >
           <div className="flex gap-5 w-full">
             <div className="relative flex flex-col justify-start w-[calc(50%-10px)] aspect-[174/306] p-[18px]">
               <Image
@@ -59,11 +67,14 @@ export default function IndustriesGridDesk() {
               {t("manufacturing")}
             </p>
           </div>
-        </div>
+        </AnimatedWrapper>
       </div>
       {/* Другий стовпчик */}
       <div className="flex flex-col gap-5 justify-between">
-        <div className="grid grid-cols-[1fr_1fr] gap-5">
+        <AnimatedWrapper
+          animation={fadeInAnimation({ x: 100, delay: 1.8 })}
+          className="grid grid-cols-[1fr_1fr] gap-5"
+        >
           <div className="relative flex flex-col justify-start aspect-[270/171] p-[18px]">
             <Image
               src="/images/industries/industryFiveDesk.webp"
@@ -89,8 +100,11 @@ export default function IndustriesGridDesk() {
               {t("it")}
             </p>
           </div>
-        </div>
-        <div className="flex gap-5">
+        </AnimatedWrapper>
+        <AnimatedWrapper
+          animation={fadeInAnimation({ y: 100, delay: 2.4 })}
+          className="flex gap-5"
+        >
           <div className="relative flex flex-col justify-start w-[calc(32%-10px)] aspect-[173/306] p-[18px]">
             <Image
               src="/images/industries/industrySevenDesk.webp"
@@ -130,7 +144,7 @@ export default function IndustriesGridDesk() {
               </p>
             </div>
           </div>
-        </div>
+        </AnimatedWrapper>
       </div>
     </div>
   );

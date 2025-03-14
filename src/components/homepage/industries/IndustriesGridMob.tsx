@@ -1,12 +1,17 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import AnimatedWrapper from "@/components/shared/animatedWrapper/AnimatedWrapper";
+import { fadeInAnimation } from "@/helpers/animation";
 
 export default function IndustriesGridMob() {
   const t = useTranslations("homePage.industries");
 
   return (
     <div className="sm:hidden flex flex-col gap-3">
-      <div className="grid grid-cols-[0.95fr_0.96fr] gap-3">
+      <AnimatedWrapper
+        animation={fadeInAnimation({ x: -100, delay: 0.6 })}
+        className="grid grid-cols-[0.95fr_0.96fr] gap-3"
+      >
         <div className="relative flex flex-col justify-end aspect-[298/571] p-3">
           <Image
             src="/images/industries/industryOneMob.webp"
@@ -19,7 +24,6 @@ export default function IndustriesGridMob() {
             {t("trade")}
           </p>
         </div>
-
         <div className="flex flex-col justify-between">
           <div className="relative flex flex-col justify-start aspect-[300/241] p-3">
             <Image
@@ -46,8 +50,12 @@ export default function IndustriesGridMob() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="relative flex flex-col justify-start aspect-[622/265] p-3">
+      </AnimatedWrapper>
+
+      <AnimatedWrapper
+        animation={fadeInAnimation({ x: 100, delay: 1.2 })}
+        className="relative flex flex-col justify-start aspect-[622/265] p-3"
+      >
         <Image
           src="/images/industries/industryFourMob.webp"
           alt="industry"
@@ -58,8 +66,12 @@ export default function IndustriesGridMob() {
         <p className="relative w-[82px] mr-auto font-prosto text-12reg uppercase text-right">
           {t("manufacturing")}
         </p>
-      </div>
-      <div className="grid grid-cols-[0.96fr_0.95fr] gap-3">
+      </AnimatedWrapper>
+
+      <AnimatedWrapper
+        animation={fadeInAnimation({ x: -100, delay: 1.8 })}
+        className="grid grid-cols-[0.96fr_0.95fr] gap-3"
+      >
         <div className="flex flex-col gap-3">
           <div className="relative flex flex-col justify-start aspect-[298/201] p-3">
             <Image
@@ -124,7 +136,7 @@ export default function IndustriesGridMob() {
             </p>
           </div>
         </div>
-      </div>
+      </AnimatedWrapper>
     </div>
   );
 }
