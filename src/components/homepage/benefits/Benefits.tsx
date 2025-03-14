@@ -49,7 +49,7 @@ export default function Benefits() {
             alt="background"
             width={1102}
             height={1036}
-            className=" w-full h-full object-cover object-[calc(50%+80px)_center]"
+            className="w-full h-full object-cover object-[calc(50%+80px)_center]"
           />
         </AnimatedWrapper>
       </div>

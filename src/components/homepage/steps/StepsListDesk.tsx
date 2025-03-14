@@ -28,12 +28,14 @@ export default function StepsListDesk() {
           <p className="max-w-[154px] mr-auto mt-auto font-prosto text-12reg tab:text-16reg uppercase leading-[130%]">
             {t("firstDescription")}
           </p>
+        </div>
+        <div className="absolute bottom-0 right-[-41px] laptop:right-[51px] -z-10 w-[379px]">
           <Image
             src="/images/steps/circleDesk.svg"
             alt="circle"
             width={380}
             height={154}
-            className="absolute bottom-0 right-[51px] -z-10 w-auto h-[154px] object-cover overflow-visible"
+            className="w-full h-auto object-cover"
           />
         </div>
       </AnimatedListItem>
