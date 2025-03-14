@@ -76,8 +76,7 @@ export default function StepsListDesk() {
         </p>
       </AnimatedListItem>
       <AnimatedListItem className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)]">
-        <div className="xl:w-[320px] xl:mr-auto px-[25px] py-9">
-          {" "}
+        <div className="flex flex-col justify-between xl:w-[320px] xl:mr-auto px-[25px] py-9 h-full">
           <div className="flex items-center justify-center gap-x-[19px] w-full min-h-[28px] xl:min-h-fit mb-[88px]">
             <h3 className="w-[65%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
               {t("fourthTitle")}
