@@ -5,7 +5,7 @@ export default function StepsListDesk() {
   const t = useTranslations("homePage.steps");
   return (
     <ul className="hidden sm:flex">
-      <li className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)] bg-main">
+      <li className="relative -z-20 flex flex-col items-center w-1/4 xl:w-[calc(50%-320px)] bg-main ">
         <div className="relative flex flex-col justify-between xl:w-[320px] xl:ml-auto px-[25px] py-9 h-full">
           <div className="flex items-center justify-center gap-x-[19px] w-full min-h-[28px] xl:min-h-fit mb-[88px]">
             <h3 className="w-[70%] lg:w-auto font-prosto text-14reg xl:text-20reg uppercase leading-[100%]">
@@ -24,7 +24,7 @@ export default function StepsListDesk() {
             alt="circle"
             width={380}
             height={154}
-            className="absolute bottom-0 right-[51px] -z-10 w-auto h-[154px] object-cover  overflow-visible"
+            className="absolute bottom-0 right-[51px] -z-10 w-auto h-[154px] object-cover overflow-visible"
           />
         </div>
       </li>

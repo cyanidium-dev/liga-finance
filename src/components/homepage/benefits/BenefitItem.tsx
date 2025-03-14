@@ -1,3 +1,5 @@
+import AnimatedListItem from "@/components/shared/animatedWrapper/AnimatedListItem";
+
 interface BenefitItemProps {
   benefitItem: string;
 }
@@ -17,11 +19,11 @@ export default function BenefitItem({ benefitItem }: BenefitItemProps) {
     ));
 
   return (
-    <li className="flex items-center gap-x-3 xl:gap-x-[18px]">
+    <AnimatedListItem className="flex items-center gap-x-3 xl:gap-x-[18px]">
       <span className="size-[14px] xl:size-6 rounded-full bg-black"></span>
       <p className="w-[90%] text-12reg xl:text-20reg leading-[120%] text-black">
         {renderTextWithBreaks(benefitItem)}
       </p>
-    </li>
+    </AnimatedListItem>
   );
 }
