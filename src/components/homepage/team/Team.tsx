@@ -9,7 +9,7 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="container max-w-[1280px] py-[100px] xl:py-[180px]"
+      className="container max-w-[1280px] py-[100px] xl:py-[180px] overflow-x-hidden"
     >
       <AnimatedWrapper
         as={motion.h2}
