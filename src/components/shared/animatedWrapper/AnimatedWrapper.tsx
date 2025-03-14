@@ -13,7 +13,7 @@ interface AnimatedWrapperProps extends PropsWithChildren {
 export default function AnimatedWrapper({
   as: Component = motion.div, // За замовчуванням анімований div
   className = "",
-  animation = fadeInAnimation,
+  animation = fadeInAnimation({}),
   children,
 }: AnimatedWrapperProps) {
   return (
