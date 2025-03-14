@@ -8,19 +8,21 @@ interface AnimatedWrapperProps extends PropsWithChildren {
   as?: ElementType; // Будь-який HTML-елемент
   className?: string;
   animation?: Variants; // Кастомна анімація
+  viewport?: { once?: boolean; amount?: number };
 }
 
 export default function AnimatedWrapper({
   as: Component = motion.div, // За замовчуванням анімований div
   className = "",
   animation = fadeInAnimation({}),
+  viewport = { once: true },
   children,
 }: AnimatedWrapperProps) {
   return (
     <Component
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={viewport}
       variants={animation}
       className={className}
     >
