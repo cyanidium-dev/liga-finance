@@ -9,6 +9,7 @@ import { Locale } from "@/types/locale";
 import { generatePageMetaData } from "@/utils/generatePageMetadata";
 import "./globals.css";
 import Providers from "./providers";
+import type { Viewport } from "next";
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
@@ -40,6 +41,12 @@ export async function generateMetadata({
   });
 }
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default async function LocaleLayout({
   children,
   params,
@@ -53,12 +60,6 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="scroll-smooth">
-      <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-      </head>
       <body
         className={`${montserrat.variable} ${prosto.variable} relative z-[1] flex min-h-screen flex-col antialiased text-12light lg:text-16light`}
       >
